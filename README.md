@@ -1,4 +1,4 @@
-# Satis
+# DSWP Satis
 
 ![License](https://img.shields.io/badge/License-GPLv3-blue.svg)
 
@@ -98,7 +98,7 @@ Add to your project's `composer.json`:
 Then require packages normally:
 
 ```bash
-composer require bcgov/bcgov-common-plugin
+composer require bcgov/wordpress-utils
 ```
 
 ## Adding New Packages
@@ -108,7 +108,7 @@ To add a new package to the repository:
 1. Edit `satis.json`
 2. Add a new entry to the `repositories` array:
    ```json
-   { "type": "vcs", "url": "https://bitbucket.org/bc-gov/your-package.git" }
+   { "type": "vcs", "url": "https://github.com/bcgov/your-package.git" }
    ```
 3. Commit and push to `main`
 4. The workflow will automatically rebuild and include the new package
