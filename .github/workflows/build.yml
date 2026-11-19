@@ -25,7 +25,7 @@ jobs:
           tools: composer
 
       - name: Install Satis
-        run: composer create-project composer/satis satis --no-interaction
+        run: composer create-project composer/satis satis --no-interaction --stability=dev
 
       - name: Configure authentication
         run: |
