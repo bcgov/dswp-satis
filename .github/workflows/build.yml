@@ -3,6 +3,9 @@ name: Build Satis Repository
 on:
   push:
     branches: [main]
+    paths:
+      # (1) Only rebuild when the package list changes, not on every push.
+      - "satis.json"
   schedule:
     # Rebuild daily at 06:00 UTC so newly-tagged packages appear automatically.
     - cron: '0 6 * * *'
@@ -17,6 +20,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v7
+        with:
+          fetch-depth: 0   # full history so `git diff HEAD^ HEAD` works on push
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
@@ -38,8 +43,43 @@ jobs:
           }
           EOF
 
+      # Restore the previously-built repository so Satis can update it in place
+      # rather than rebuilding every package from scratch.
+      - name: Restore previous build
+        run: |
+          mkdir -p docs
+          git fetch origin gh-pages --depth=1 2>/dev/null || true
+          if git cat-file -e "origin/gh-pages:packages.json" 2>/dev/null; then
+            git archive origin/gh-pages | tar -x -C docs/
+          fi
+
+      # (2) On a push, work out which Composer packages were added/changed in
+      # satis.json, and rebuild only those. Falls back to a full build on a
+      # schedule/dispatch, on the first commit, or if a package name can't be
+      # resolved.
       - name: Build repository
-        run: php satis/bin/satis build satis.json docs/
+        run: |
+          PACKAGES=""
+          if [ "$GITHUB_EVENT_NAME" = "push" ]; then
+            URLS="$(git diff HEAD^ HEAD -- satis.json | grep -oE 'https://github\.com/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+\.git' | sort -u || true)"
+            for url in $URLS; do
+              repo="$(printf '%s' "$url" | sed -E 's#https://github\.com/([^/]+/[^/]+)\.git#\1#')"
+              name=""
+              for branch in main master; do
+                name="$(curl -fsSL "https://raw.githubusercontent.com/$repo/$branch/composer.json" 2>/dev/null | php -r '$j=json_decode(stream_get_contents(STDIN), true); echo $j["name"] ?? "";' 2>/dev/null || true)"
+                [ -n "$name" ] && break
+              done
+              [ -n "$name" ] && PACKAGES="$PACKAGES $name"
+            done
+          fi
+
+          if [ -n "$PACKAGES" ]; then
+            echo "Incremental build:$PACKAGES"
+            php satis/bin/satis build satis.json docs/ $PACKAGES
+          else
+            echo "Full build"
+            php satis/bin/satis build satis.json docs/
+          fi
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
