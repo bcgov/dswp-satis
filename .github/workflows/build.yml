@@ -1,0 +1,50 @@
+name: Build Satis Repository
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    # Rebuild daily at 06:00 UTC so newly-tagged packages appear automatically.
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.5"
+          tools: composer
+
+      - name: Install Satis
+        run: composer create-project composer/satis satis --no-interaction
+
+      - name: Configure authentication
+        run: |
+          mkdir -p $HOME/.composer
+          cat > $HOME/.composer/auth.json << 'EOF'
+          {
+            "github-oauth": {
+              "github.com": "${{ secrets.SATIS_PAT }}"
+            }
+          }
+          EOF
+
+      - name: Build repository
+        run: php satis/bin/satis build satis.json docs/
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          publish_branch: gh-pages
+          force_orphan: true

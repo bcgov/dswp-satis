@@ -1,0 +1,64 @@
+{
+  "name": "bcgov/satis",
+  "homepage": "https://bcgov.github.io/dswp-satis/",
+  "archive": {
+    "directory": "dist",
+    "prefix-url": "https://bcgov.github.io/dswp-satis/",
+    "format": "zip",
+    "skip-dev": false
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/bcgov/bcgov-emergency-info.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/bcgov/bcfooddirectory-wordpress-plugin.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/bcgov/bcgov-plugin-cleanbc.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/bcgov/bcgov-wordpress-block-theme.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/bcgov/design-system-wordpress-child-theme-emergency-info.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/bcgov/design-system-wordpress-child-theme-firb.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/bcgov/design-system-wordpress-child-theme-hporoo.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/bcgov/design-system-wordpress-child-theme-ticorp.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/bcgov/design-system-wordpress-plugin.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/bcgov/design-system-wordpress-theme.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/bcgov/wordpress-chefs-integration.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/bcgov/wordpress-document-repository.git"
+    },
+    { "type": "vcs", "url": "https://github.com/bcgov/wordpress-search.git" },
+    { "type": "vcs", "url": "https://github.com/bcgov/wordpress-utils.git" }
+  ],
+  "require-all": true,
+  "output-dir": "docs/"
+}
