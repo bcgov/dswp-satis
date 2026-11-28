@@ -1,0 +1,1546 @@
+{
+    "packages": {
+        "bcgov-theme/design-system-wordpress-theme": [
+            {
+                "name": "bcgov-theme/design-system-wordpress-theme",
+                "version": "dev-before_rebase_1_14_3_release/1.1.15.0",
+                "version_normalized": "dev-before_rebase_1_14_3_release/1.1.15.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/design-system-wordpress-theme.git",
+                    "reference": "112d6de5a5053a8748ecc405a4239b80dd778afd"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-theme/design-system-wordpress-theme/bcgov-theme-design-system-wordpress-theme-112d6de5a5053a8748ecc405a4239b80dd778afd-zip-24a369.zip",
+                    "reference": "112d6de5a5053a8748ecc405a4239b80dd778afd",
+                    "shasum": "26d75f9711a58f853c1b528a327fb207c3ccdc0f"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-utils": "2.5.0",
+                    "yoast/phpunit-polyfills": "^1.0"
+                },
+                "time": "2026-01-08T23:28:10+00:00",
+                "type": "wordpress-theme",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\": [
+                            "src",
+                            "inc"
+                        ]
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "scan-wp-patterns": [
+                        "@php vendor/bin/scan-wp-patterns.php"
+                    ],
+                    "update-version": [
+                        "bash update-version.sh"
+                    ],
+                    "test-setup": [
+                        "bash vendor/bcgov/wordpress-utils/bin/install-wp-tests.sh wordpress_test root 'rootpassword' 0.0.0.0 latest"
+                    ],
+                    "production": [
+                        "composer validate",
+                        "composer phpcbf",
+                        "composer phpcs",
+                        "composer scan-wp-patterns",
+                        "npm run fix:js",
+                        "npm run fix:css",
+                        "npm run test",
+                        "npm run build"
+                    ],
+                    "phpcs-allow-todo": [
+                        "vendor/bin/phpcs -ps --standard=./vendor/bcgov/wordpress-utils/wordpress.xml  --exclude=Generic.Commenting.Todo --colors ./"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "vendor/bin/phpunit --configuration vendor/bcgov/wordpress-utils/phpunit.xml.dist"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "description": "Design System WordPress Theme",
+                "support": {
+                    "source": "https://github.com/bcgov/design-system-wordpress-theme/tree/before_rebase_1_14_3_release/1.1.15.0",
+                    "issues": "https://github.com/bcgov/design-system-wordpress-theme/issues"
+                },
+                "abandoned": true,
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov-theme/design-system-wordpress-theme",
+                "version": "dev-bug/dswp-1023-fix-blue-footer-fix-no-3",
+                "version_normalized": "dev-bug/dswp-1023-fix-blue-footer-fix-no-3",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/design-system-wordpress-theme.git",
+                    "reference": "082426b80aaa6bd0df92553c2bea620cdc1bdd1f"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-theme/design-system-wordpress-theme/bcgov-theme-design-system-wordpress-theme-082426b80aaa6bd0df92553c2bea620cdc1bdd1f-zip-723eac.zip",
+                    "reference": "082426b80aaa6bd0df92553c2bea620cdc1bdd1f",
+                    "shasum": "b5e3bbf3bee07d92fcd4fbb9adae986b3a53342a"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-utils": "2.5.0",
+                    "yoast/phpunit-polyfills": "^1.0"
+                },
+                "time": "2026-07-20T20:25:36+00:00",
+                "type": "wordpress-theme",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\": [
+                            "src",
+                            "inc"
+                        ]
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "scan-wp-patterns": [
+                        "@php vendor/bin/scan-wp-patterns.php"
+                    ],
+                    "update-version": [
+                        "bash update-version.sh"
+                    ],
+                    "test-setup": [
+                        "bash vendor/bcgov/wordpress-utils/bin/install-wp-tests.sh wordpress_test root 'rootpassword' 0.0.0.0 latest"
+                    ],
+                    "production": [
+                        "composer validate",
+                        "composer phpcbf",
+                        "composer phpcs",
+                        "composer scan-wp-patterns",
+                        "npm run fix:js",
+                        "npm run fix:css",
+                        "npm run test",
+                        "npm run build"
+                    ],
+                    "phpcs-allow-todo": [
+                        "vendor/bin/phpcs -ps --standard=./vendor/bcgov/wordpress-utils/wordpress.xml  --exclude=Generic.Commenting.Todo --colors ./"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "vendor/bin/phpunit --configuration vendor/bcgov/wordpress-utils/phpunit.xml.dist"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "description": "Design System WordPress Theme",
+                "support": {
+                    "source": "https://github.com/bcgov/design-system-wordpress-theme/tree/bug/dswp-1023-fix-blue-footer-fix-no-3",
+                    "issues": "https://github.com/bcgov/design-system-wordpress-theme/issues"
+                },
+                "abandoned": true,
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov-theme/design-system-wordpress-theme",
+                "version": "dev-bug/dswp-745-Post-Type-Filter-is-missing-from-Search-with-Search-plugin-template",
+                "version_normalized": "dev-bug/dswp-745-Post-Type-Filter-is-missing-from-Search-with-Search-plugin-template",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/design-system-wordpress-theme.git",
+                    "reference": "2f088813b613910139b47e490e8e30056146c153"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-theme/design-system-wordpress-theme/bcgov-theme-design-system-wordpress-theme-2f088813b613910139b47e490e8e30056146c153-zip-212e03.zip",
+                    "reference": "2f088813b613910139b47e490e8e30056146c153",
+                    "shasum": "112f90f43b7e1a6778937145af510790450547da"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-utils": "2.5.0",
+                    "yoast/phpunit-polyfills": "^1.0"
+                },
+                "time": "2026-04-30T17:52:35+00:00",
+                "type": "wordpress-theme",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\": [
+                            "src",
+                            "inc"
+                        ]
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "scan-wp-patterns": [
+                        "@php vendor/bin/scan-wp-patterns.php"
+                    ],
+                    "update-version": [
+                        "bash update-version.sh"
+                    ],
+                    "test-setup": [
+                        "bash vendor/bcgov/wordpress-utils/bin/install-wp-tests.sh wordpress_test root 'rootpassword' 0.0.0.0 latest"
+                    ],
+                    "production": [
+                        "composer validate",
+                        "composer phpcbf",
+                        "composer phpcs",
+                        "composer scan-wp-patterns",
+                        "npm run fix:js",
+                        "npm run fix:css",
+                        "npm run test",
+                        "npm run build"
+                    ],
+                    "phpcs-allow-todo": [
+                        "vendor/bin/phpcs -ps --standard=./vendor/bcgov/wordpress-utils/wordpress.xml  --exclude=Generic.Commenting.Todo --colors ./"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "vendor/bin/phpunit --configuration vendor/bcgov/wordpress-utils/phpunit.xml.dist"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "description": "Design System WordPress Theme",
+                "support": {
+                    "source": "https://github.com/bcgov/design-system-wordpress-theme/tree/bug/dswp-745-Post-Type-Filter-is-missing-from-Search-with-Search-plugin-template",
+                    "issues": "https://github.com/bcgov/design-system-wordpress-theme/issues"
+                },
+                "abandoned": true,
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov-theme/design-system-wordpress-theme",
+                "version": "dev-copy_before_rebase_1.14.2_release/1.15.0",
+                "version_normalized": "dev-copy_before_rebase_1.14.2_release/1.15.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/design-system-wordpress-theme.git",
+                    "reference": "a73491a55d5e2f1dd69de8582734e4e96bab532d"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-theme/design-system-wordpress-theme/bcgov-theme-design-system-wordpress-theme-a73491a55d5e2f1dd69de8582734e4e96bab532d-zip-0c5a90.zip",
+                    "reference": "a73491a55d5e2f1dd69de8582734e4e96bab532d",
+                    "shasum": "1bc8631dfeff219fca8935d09264c0b4b5abab3a"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-utils": "2.5.0",
+                    "yoast/phpunit-polyfills": "^1.0"
+                },
+                "time": "2025-12-18T18:11:28+00:00",
+                "type": "wordpress-theme",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\": [
+                            "src",
+                            "inc"
+                        ]
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "scan-wp-patterns": [
+                        "@php vendor/bin/scan-wp-patterns.php"
+                    ],
+                    "update-version": [
+                        "bash update-version.sh"
+                    ],
+                    "test-setup": [
+                        "bash vendor/bcgov/wordpress-utils/bin/install-wp-tests.sh wordpress_test root 'rootpassword' 0.0.0.0 latest"
+                    ],
+                    "production": [
+                        "composer validate",
+                        "composer phpcbf",
+                        "composer phpcs",
+                        "composer scan-wp-patterns",
+                        "npm run fix:js",
+                        "npm run fix:css",
+                        "npm run test",
+                        "npm run build"
+                    ],
+                    "phpcs-allow-todo": [
+                        "vendor/bin/phpcs -ps --standard=./vendor/bcgov/wordpress-utils/wordpress.xml  --exclude=Generic.Commenting.Todo --colors ./"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "vendor/bin/phpunit --configuration vendor/bcgov/wordpress-utils/phpunit.xml.dist"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "description": "Design System WordPress Theme",
+                "support": {
+                    "source": "https://github.com/bcgov/design-system-wordpress-theme/tree/copy_before_rebase_1.14.2_release/1.15.0",
+                    "issues": "https://github.com/bcgov/design-system-wordpress-theme/issues"
+                },
+                "abandoned": true,
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov-theme/design-system-wordpress-theme",
+                "version": "dev-feature/DSWP-671-header-border-lines-not-correct",
+                "version_normalized": "dev-feature/DSWP-671-header-border-lines-not-correct",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/design-system-wordpress-theme.git",
+                    "reference": "3f22389a81b60b2c9d9695ed61c8c65a100dc603"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-theme/design-system-wordpress-theme/bcgov-theme-design-system-wordpress-theme-3f22389a81b60b2c9d9695ed61c8c65a100dc603-zip-2c857f.zip",
+                    "reference": "3f22389a81b60b2c9d9695ed61c8c65a100dc603",
+                    "shasum": "6ed1c4968ebbb54ae1bbc04b492c3f64e31c6d35"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-utils": "2.5.0",
+                    "yoast/phpunit-polyfills": "^1.0"
+                },
+                "time": "2026-04-13T20:16:30+00:00",
+                "type": "wordpress-theme",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\": [
+                            "src",
+                            "inc"
+                        ]
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "scan-wp-patterns": [
+                        "@php vendor/bin/scan-wp-patterns.php"
+                    ],
+                    "update-version": [
+                        "bash update-version.sh"
+                    ],
+                    "test-setup": [
+                        "bash vendor/bcgov/wordpress-utils/bin/install-wp-tests.sh wordpress_test root 'rootpassword' 0.0.0.0 latest"
+                    ],
+                    "production": [
+                        "composer validate",
+                        "composer phpcbf",
+                        "composer phpcs",
+                        "composer scan-wp-patterns",
+                        "npm run fix:js",
+                        "npm run fix:css",
+                        "npm run test",
+                        "npm run build"
+                    ],
+                    "phpcs-allow-todo": [
+                        "vendor/bin/phpcs -ps --standard=./vendor/bcgov/wordpress-utils/wordpress.xml  --exclude=Generic.Commenting.Todo --colors ./"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "vendor/bin/phpunit --configuration vendor/bcgov/wordpress-utils/phpunit.xml.dist"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "description": "Design System WordPress Theme",
+                "support": {
+                    "source": "https://github.com/bcgov/design-system-wordpress-theme/tree/feature/DSWP-671-header-border-lines-not-correct",
+                    "issues": "https://github.com/bcgov/design-system-wordpress-theme/issues"
+                },
+                "abandoned": true,
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov-theme/design-system-wordpress-theme",
+                "version": "dev-feature/dswp-667-add-external-link-icon-buttons-links",
+                "version_normalized": "dev-feature/dswp-667-add-external-link-icon-buttons-links",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/design-system-wordpress-theme.git",
+                    "reference": "84a6cc97e2a45fe7629236669040f06079335ce9"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-theme/design-system-wordpress-theme/bcgov-theme-design-system-wordpress-theme-84a6cc97e2a45fe7629236669040f06079335ce9-zip-54b210.zip",
+                    "reference": "84a6cc97e2a45fe7629236669040f06079335ce9",
+                    "shasum": "1fb4e553324385145376f538f1567463ff68747c"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-utils": "2.5.0",
+                    "yoast/phpunit-polyfills": "^1.0"
+                },
+                "time": "2026-04-09T22:06:25+00:00",
+                "type": "wordpress-theme",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\": [
+                            "src",
+                            "inc"
+                        ]
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "scan-wp-patterns": [
+                        "@php vendor/bin/scan-wp-patterns.php"
+                    ],
+                    "update-version": [
+                        "bash update-version.sh"
+                    ],
+                    "test-setup": [
+                        "bash vendor/bcgov/wordpress-utils/bin/install-wp-tests.sh wordpress_test root 'rootpassword' 0.0.0.0 latest"
+                    ],
+                    "production": [
+                        "composer validate",
+                        "composer phpcbf",
+                        "composer phpcs",
+                        "composer scan-wp-patterns",
+                        "npm run fix:js",
+                        "npm run fix:css",
+                        "npm run test",
+                        "npm run build"
+                    ],
+                    "phpcs-allow-todo": [
+                        "vendor/bin/phpcs -ps --standard=./vendor/bcgov/wordpress-utils/wordpress.xml  --exclude=Generic.Commenting.Todo --colors ./"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "vendor/bin/phpunit --configuration vendor/bcgov/wordpress-utils/phpunit.xml.dist"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "description": "Design System WordPress Theme",
+                "support": {
+                    "source": "https://github.com/bcgov/design-system-wordpress-theme/tree/feature/dswp-667-add-external-link-icon-buttons-links",
+                    "issues": "https://github.com/bcgov/design-system-wordpress-theme/issues"
+                },
+                "abandoned": true,
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov-theme/design-system-wordpress-theme",
+                "version": "dev-feature/dswp-670_regression-tests-template-parts",
+                "version_normalized": "dev-feature/dswp-670_regression-tests-template-parts",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/design-system-wordpress-theme.git",
+                    "reference": "812e42ca25435b2d6b83f31e4998856fa5244e26"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-theme/design-system-wordpress-theme/bcgov-theme-design-system-wordpress-theme-812e42ca25435b2d6b83f31e4998856fa5244e26-zip-121342.zip",
+                    "reference": "812e42ca25435b2d6b83f31e4998856fa5244e26",
+                    "shasum": "5002f92ecc10f067d90cd0550317fc6420788969"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-utils": "2.5.0",
+                    "yoast/phpunit-polyfills": "^1.0"
+                },
+                "time": "2026-04-10T22:58:06+00:00",
+                "type": "wordpress-theme",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\": [
+                            "src",
+                            "inc"
+                        ]
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "scan-wp-patterns": [
+                        "@php vendor/bin/scan-wp-patterns.php"
+                    ],
+                    "update-version": [
+                        "bash update-version.sh"
+                    ],
+                    "test-setup": [
+                        "bash vendor/bcgov/wordpress-utils/bin/install-wp-tests.sh wordpress_test root 'rootpassword' 0.0.0.0 latest"
+                    ],
+                    "production": [
+                        "composer validate",
+                        "composer phpcbf",
+                        "composer phpcs",
+                        "composer scan-wp-patterns",
+                        "npm run fix:js",
+                        "npm run fix:css",
+                        "npm run test",
+                        "npm run build"
+                    ],
+                    "phpcs-allow-todo": [
+                        "vendor/bin/phpcs -ps --standard=./vendor/bcgov/wordpress-utils/wordpress.xml  --exclude=Generic.Commenting.Todo --colors ./"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "vendor/bin/phpunit --configuration vendor/bcgov/wordpress-utils/phpunit.xml.dist"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "description": "Design System WordPress Theme",
+                "support": {
+                    "source": "https://github.com/bcgov/design-system-wordpress-theme/tree/feature/dswp-670_regression-tests-template-parts",
+                    "issues": "https://github.com/bcgov/design-system-wordpress-theme/issues"
+                },
+                "abandoned": true,
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov-theme/design-system-wordpress-theme",
+                "version": "dev-hotfix/dswp-298-search-plugin-template-parts",
+                "version_normalized": "dev-hotfix/dswp-298-search-plugin-template-parts",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/design-system-wordpress-theme.git",
+                    "reference": "c0ce839166e72a739a2b131d8fa45d725c42685d"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-theme/design-system-wordpress-theme/bcgov-theme-design-system-wordpress-theme-c0ce839166e72a739a2b131d8fa45d725c42685d-zip-b256fc.zip",
+                    "reference": "c0ce839166e72a739a2b131d8fa45d725c42685d",
+                    "shasum": "3d79f02ba3f253fe6126bdf72a0d60de99c48da9"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-utils": "2.5.0",
+                    "yoast/phpunit-polyfills": "^1.0"
+                },
+                "time": "2025-12-24T23:37:52+00:00",
+                "type": "wordpress-theme",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\": [
+                            "src",
+                            "inc"
+                        ]
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "scan-wp-patterns": [
+                        "@php vendor/bin/scan-wp-patterns.php"
+                    ],
+                    "update-version": [
+                        "bash update-version.sh"
+                    ],
+                    "test-setup": [
+                        "bash vendor/bcgov/wordpress-utils/bin/install-wp-tests.sh wordpress_test root 'rootpassword' 0.0.0.0 latest"
+                    ],
+                    "production": [
+                        "composer validate",
+                        "composer phpcbf",
+                        "composer phpcs",
+                        "composer scan-wp-patterns",
+                        "npm run fix:js",
+                        "npm run fix:css",
+                        "npm run test",
+                        "npm run build"
+                    ],
+                    "phpcs-allow-todo": [
+                        "vendor/bin/phpcs -ps --standard=./vendor/bcgov/wordpress-utils/wordpress.xml  --exclude=Generic.Commenting.Todo --colors ./"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "vendor/bin/phpunit --configuration vendor/bcgov/wordpress-utils/phpunit.xml.dist"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "description": "Design System WordPress Theme",
+                "support": {
+                    "source": "https://github.com/bcgov/design-system-wordpress-theme/tree/hotfix/dswp-298-search-plugin-template-parts",
+                    "issues": "https://github.com/bcgov/design-system-wordpress-theme/issues"
+                },
+                "abandoned": true,
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov-theme/design-system-wordpress-theme",
+                "version": "dev-hotfix/dswp-398-template-inherence-fixes",
+                "version_normalized": "dev-hotfix/dswp-398-template-inherence-fixes",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/design-system-wordpress-theme.git",
+                    "reference": "653ef7f3ef9777d1eba8d5a8d963501035aa4816"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-theme/design-system-wordpress-theme/bcgov-theme-design-system-wordpress-theme-653ef7f3ef9777d1eba8d5a8d963501035aa4816-zip-05ac4e.zip",
+                    "reference": "653ef7f3ef9777d1eba8d5a8d963501035aa4816",
+                    "shasum": "80f6704eb6a43181a743a9e76cdc7738c227bac0"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-utils": "2.5.0",
+                    "yoast/phpunit-polyfills": "^1.0"
+                },
+                "time": "2025-12-24T20:20:40+00:00",
+                "type": "wordpress-theme",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\": [
+                            "src",
+                            "inc"
+                        ]
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "scan-wp-patterns": [
+                        "@php vendor/bin/scan-wp-patterns.php"
+                    ],
+                    "update-version": [
+                        "bash update-version.sh"
+                    ],
+                    "test-setup": [
+                        "bash vendor/bcgov/wordpress-utils/bin/install-wp-tests.sh wordpress_test root 'rootpassword' 0.0.0.0 latest"
+                    ],
+                    "production": [
+                        "composer validate",
+                        "composer phpcbf",
+                        "composer phpcs",
+                        "composer scan-wp-patterns",
+                        "npm run fix:js",
+                        "npm run fix:css",
+                        "npm run test",
+                        "npm run build"
+                    ],
+                    "phpcs-allow-todo": [
+                        "vendor/bin/phpcs -ps --standard=./vendor/bcgov/wordpress-utils/wordpress.xml  --exclude=Generic.Commenting.Todo --colors ./"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "vendor/bin/phpunit --configuration vendor/bcgov/wordpress-utils/phpunit.xml.dist"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "description": "Design System WordPress Theme",
+                "support": {
+                    "source": "https://github.com/bcgov/design-system-wordpress-theme/tree/hotfix/dswp-398-template-inherence-fixes",
+                    "issues": "https://github.com/bcgov/design-system-wordpress-theme/issues"
+                },
+                "abandoned": true,
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov-theme/design-system-wordpress-theme",
+                "version": "dev-hotfix/dswp-399-fix-404-no-ipsum-lorum",
+                "version_normalized": "dev-hotfix/dswp-399-fix-404-no-ipsum-lorum",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/design-system-wordpress-theme.git",
+                    "reference": "523ad2cf880008b7fe950ae62da04f38ca966761"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-theme/design-system-wordpress-theme/bcgov-theme-design-system-wordpress-theme-523ad2cf880008b7fe950ae62da04f38ca966761-zip-437f0e.zip",
+                    "reference": "523ad2cf880008b7fe950ae62da04f38ca966761",
+                    "shasum": "f604ce750a9b4e9713bf8c531e9e446f661a77da"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-utils": "2.5.0",
+                    "yoast/phpunit-polyfills": "^1.0"
+                },
+                "time": "2025-12-24T20:35:09+00:00",
+                "type": "wordpress-theme",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\": [
+                            "src",
+                            "inc"
+                        ]
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "scan-wp-patterns": [
+                        "@php vendor/bin/scan-wp-patterns.php"
+                    ],
+                    "update-version": [
+                        "bash update-version.sh"
+                    ],
+                    "test-setup": [
+                        "bash vendor/bcgov/wordpress-utils/bin/install-wp-tests.sh wordpress_test root 'rootpassword' 0.0.0.0 latest"
+                    ],
+                    "production": [
+                        "composer validate",
+                        "composer phpcbf",
+                        "composer phpcs",
+                        "composer scan-wp-patterns",
+                        "npm run fix:js",
+                        "npm run fix:css",
+                        "npm run test",
+                        "npm run build"
+                    ],
+                    "phpcs-allow-todo": [
+                        "vendor/bin/phpcs -ps --standard=./vendor/bcgov/wordpress-utils/wordpress.xml  --exclude=Generic.Commenting.Todo --colors ./"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "vendor/bin/phpunit --configuration vendor/bcgov/wordpress-utils/phpunit.xml.dist"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "description": "Design System WordPress Theme",
+                "support": {
+                    "source": "https://github.com/bcgov/design-system-wordpress-theme/tree/hotfix/dswp-399-fix-404-no-ipsum-lorum",
+                    "issues": "https://github.com/bcgov/design-system-wordpress-theme/issues"
+                },
+                "abandoned": true,
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov-theme/design-system-wordpress-theme",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/design-system-wordpress-theme.git",
+                    "reference": "cb828ef4f5f3e02b1910de0e5e7f821ca6db0977"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-theme/design-system-wordpress-theme/bcgov-theme-design-system-wordpress-theme-cb828ef4f5f3e02b1910de0e5e7f821ca6db0977-zip-9363a6.zip",
+                    "reference": "cb828ef4f5f3e02b1910de0e5e7f821ca6db0977",
+                    "shasum": "22206114b69cd8e3603ebca8eb2e62396988b523"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-utils": "2.5.0",
+                    "yoast/phpunit-polyfills": "^1.0"
+                },
+                "time": "2026-07-21T18:21:08+00:00",
+                "default-branch": true,
+                "type": "wordpress-theme",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\": [
+                            "src",
+                            "inc"
+                        ]
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "scan-wp-patterns": [
+                        "@php vendor/bin/scan-wp-patterns.php"
+                    ],
+                    "update-version": [
+                        "bash update-version.sh"
+                    ],
+                    "test-setup": [
+                        "bash vendor/bcgov/wordpress-utils/bin/install-wp-tests.sh wordpress_test root 'rootpassword' 0.0.0.0 latest"
+                    ],
+                    "production": [
+                        "composer validate",
+                        "composer phpcbf",
+                        "composer phpcs",
+                        "composer scan-wp-patterns",
+                        "npm run fix:js",
+                        "npm run fix:css",
+                        "npm run test",
+                        "npm run build"
+                    ],
+                    "phpcs-allow-todo": [
+                        "vendor/bin/phpcs -ps --standard=./vendor/bcgov/wordpress-utils/wordpress.xml  --exclude=Generic.Commenting.Todo --colors ./"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "vendor/bin/phpunit --configuration vendor/bcgov/wordpress-utils/phpunit.xml.dist"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "description": "Design System WordPress Theme",
+                "support": {
+                    "source": "https://github.com/bcgov/design-system-wordpress-theme/tree/v1.16.0",
+                    "issues": "https://github.com/bcgov/design-system-wordpress-theme/issues"
+                },
+                "abandoned": true,
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov-theme/design-system-wordpress-theme",
+                "version": "dev-merged_release/1.14.1",
+                "version_normalized": "dev-merged_release/1.14.1",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/design-system-wordpress-theme.git",
+                    "reference": "aa2979a7fa71bfe7abd140c3372ffeaba55605fc"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-theme/design-system-wordpress-theme/bcgov-theme-design-system-wordpress-theme-aa2979a7fa71bfe7abd140c3372ffeaba55605fc-zip-82e6fc.zip",
+                    "reference": "aa2979a7fa71bfe7abd140c3372ffeaba55605fc",
+                    "shasum": "b693bbee9f536b501687fcf4c9ee01952079a055"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-utils": "2.5.0",
+                    "yoast/phpunit-polyfills": "^1.0"
+                },
+                "time": "2025-12-04T18:04:33+00:00",
+                "type": "wordpress-theme",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\": [
+                            "src",
+                            "inc"
+                        ]
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "scan-wp-patterns": [
+                        "@php vendor/bin/scan-wp-patterns.php"
+                    ],
+                    "update-version": [
+                        "bash update-version.sh"
+                    ],
+                    "test-setup": [
+                        "bash vendor/bcgov/wordpress-utils/bin/install-wp-tests.sh wordpress_test root 'rootpassword' 0.0.0.0 latest"
+                    ],
+                    "production": [
+                        "composer validate",
+                        "composer phpcbf",
+                        "composer phpcs",
+                        "composer scan-wp-patterns",
+                        "npm run fix:js",
+                        "npm run fix:css",
+                        "npm run test",
+                        "npm run build"
+                    ],
+                    "phpcs-allow-todo": [
+                        "vendor/bin/phpcs -ps --standard=./vendor/bcgov/wordpress-utils/wordpress.xml  --exclude=Generic.Commenting.Todo --colors ./"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "vendor/bin/phpunit --configuration vendor/bcgov/wordpress-utils/phpunit.xml.dist"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "description": "Design System WordPress Theme",
+                "support": {
+                    "source": "https://github.com/bcgov/design-system-wordpress-theme/tree/merged_release/1.14.1",
+                    "issues": "https://github.com/bcgov/design-system-wordpress-theme/issues"
+                },
+                "abandoned": true,
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov-theme/design-system-wordpress-theme",
+                "version": "dev-release/1.14.1",
+                "version_normalized": "dev-release/1.14.1",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/design-system-wordpress-theme.git",
+                    "reference": "aa2979a7fa71bfe7abd140c3372ffeaba55605fc"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-theme/design-system-wordpress-theme/bcgov-theme-design-system-wordpress-theme-aa2979a7fa71bfe7abd140c3372ffeaba55605fc-zip-82e6fc.zip",
+                    "reference": "aa2979a7fa71bfe7abd140c3372ffeaba55605fc",
+                    "shasum": "b693bbee9f536b501687fcf4c9ee01952079a055"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-utils": "2.5.0",
+                    "yoast/phpunit-polyfills": "^1.0"
+                },
+                "time": "2025-12-04T18:04:33+00:00",
+                "type": "wordpress-theme",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\": [
+                            "src",
+                            "inc"
+                        ]
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "scan-wp-patterns": [
+                        "@php vendor/bin/scan-wp-patterns.php"
+                    ],
+                    "update-version": [
+                        "bash update-version.sh"
+                    ],
+                    "test-setup": [
+                        "bash vendor/bcgov/wordpress-utils/bin/install-wp-tests.sh wordpress_test root 'rootpassword' 0.0.0.0 latest"
+                    ],
+                    "production": [
+                        "composer validate",
+                        "composer phpcbf",
+                        "composer phpcs",
+                        "composer scan-wp-patterns",
+                        "npm run fix:js",
+                        "npm run fix:css",
+                        "npm run test",
+                        "npm run build"
+                    ],
+                    "phpcs-allow-todo": [
+                        "vendor/bin/phpcs -ps --standard=./vendor/bcgov/wordpress-utils/wordpress.xml  --exclude=Generic.Commenting.Todo --colors ./"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "vendor/bin/phpunit --configuration vendor/bcgov/wordpress-utils/phpunit.xml.dist"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "description": "Design System WordPress Theme",
+                "support": {
+                    "source": "https://github.com/bcgov/design-system-wordpress-theme/tree/merged_release/1.14.1",
+                    "issues": "https://github.com/bcgov/design-system-wordpress-theme/issues"
+                },
+                "abandoned": true,
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov-theme/design-system-wordpress-theme",
+                "version": "dev-release/1.14.2",
+                "version_normalized": "dev-release/1.14.2",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/design-system-wordpress-theme.git",
+                    "reference": "59a77140873004def070a5175c367e1fdc029198"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-theme/design-system-wordpress-theme/bcgov-theme-design-system-wordpress-theme-59a77140873004def070a5175c367e1fdc029198-zip-0ca497.zip",
+                    "reference": "59a77140873004def070a5175c367e1fdc029198",
+                    "shasum": "492e223c9ee98f46c36840a38d0b6f6d6635f5f1"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-utils": "2.5.0",
+                    "yoast/phpunit-polyfills": "^1.0"
+                },
+                "time": "2025-12-09T21:03:07+00:00",
+                "type": "wordpress-theme",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\": [
+                            "src",
+                            "inc"
+                        ]
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "scan-wp-patterns": [
+                        "@php vendor/bin/scan-wp-patterns.php"
+                    ],
+                    "update-version": [
+                        "bash update-version.sh"
+                    ],
+                    "test-setup": [
+                        "bash vendor/bcgov/wordpress-utils/bin/install-wp-tests.sh wordpress_test root 'rootpassword' 0.0.0.0 latest"
+                    ],
+                    "production": [
+                        "composer validate",
+                        "composer phpcbf",
+                        "composer phpcs",
+                        "composer scan-wp-patterns",
+                        "npm run fix:js",
+                        "npm run fix:css",
+                        "npm run test",
+                        "npm run build"
+                    ],
+                    "phpcs-allow-todo": [
+                        "vendor/bin/phpcs -ps --standard=./vendor/bcgov/wordpress-utils/wordpress.xml  --exclude=Generic.Commenting.Todo --colors ./"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "vendor/bin/phpunit --configuration vendor/bcgov/wordpress-utils/phpunit.xml.dist"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "description": "Design System WordPress Theme",
+                "support": {
+                    "source": "https://github.com/bcgov/design-system-wordpress-theme/tree/1.14.1",
+                    "issues": "https://github.com/bcgov/design-system-wordpress-theme/issues"
+                },
+                "abandoned": true,
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov-theme/design-system-wordpress-theme",
+                "version": "dev-release/1.14.3",
+                "version_normalized": "dev-release/1.14.3",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/design-system-wordpress-theme.git",
+                    "reference": "8a96c356d9a4062775af0827d8467e5ad0714c80"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-theme/design-system-wordpress-theme/bcgov-theme-design-system-wordpress-theme-8a96c356d9a4062775af0827d8467e5ad0714c80-zip-527f8f.zip",
+                    "reference": "8a96c356d9a4062775af0827d8467e5ad0714c80",
+                    "shasum": "1f504aeb23e60579c423e2952478d4ccfc27655a"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-utils": "2.5.0",
+                    "yoast/phpunit-polyfills": "^1.0"
+                },
+                "time": "2025-12-24T23:39:32+00:00",
+                "type": "wordpress-theme",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\": [
+                            "src",
+                            "inc"
+                        ]
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "scan-wp-patterns": [
+                        "@php vendor/bin/scan-wp-patterns.php"
+                    ],
+                    "update-version": [
+                        "bash update-version.sh"
+                    ],
+                    "test-setup": [
+                        "bash vendor/bcgov/wordpress-utils/bin/install-wp-tests.sh wordpress_test root 'rootpassword' 0.0.0.0 latest"
+                    ],
+                    "production": [
+                        "composer validate",
+                        "composer phpcbf",
+                        "composer phpcs",
+                        "composer scan-wp-patterns",
+                        "npm run fix:js",
+                        "npm run fix:css",
+                        "npm run test",
+                        "npm run build"
+                    ],
+                    "phpcs-allow-todo": [
+                        "vendor/bin/phpcs -ps --standard=./vendor/bcgov/wordpress-utils/wordpress.xml  --exclude=Generic.Commenting.Todo --colors ./"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "vendor/bin/phpunit --configuration vendor/bcgov/wordpress-utils/phpunit.xml.dist"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "description": "Design System WordPress Theme",
+                "support": {
+                    "source": "https://github.com/bcgov/design-system-wordpress-theme/tree/release/1.14.3",
+                    "issues": "https://github.com/bcgov/design-system-wordpress-theme/issues"
+                },
+                "abandoned": true,
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov-theme/design-system-wordpress-theme",
+                "version": "dev-release/1.15.0",
+                "version_normalized": "dev-release/1.15.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/design-system-wordpress-theme.git",
+                    "reference": "03665a9d8e3ac2c4e8856c79e128bf7c6126d8d4"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-theme/design-system-wordpress-theme/bcgov-theme-design-system-wordpress-theme-03665a9d8e3ac2c4e8856c79e128bf7c6126d8d4-zip-3294e2.zip",
+                    "reference": "03665a9d8e3ac2c4e8856c79e128bf7c6126d8d4",
+                    "shasum": "5cde5097b625ade6993b0690cb4426c559456c54"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-utils": "2.5.0",
+                    "yoast/phpunit-polyfills": "^1.0"
+                },
+                "time": "2026-03-24T21:22:23+00:00",
+                "type": "wordpress-theme",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\": [
+                            "src",
+                            "inc"
+                        ]
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "scan-wp-patterns": [
+                        "@php vendor/bin/scan-wp-patterns.php"
+                    ],
+                    "update-version": [
+                        "bash update-version.sh"
+                    ],
+                    "test-setup": [
+                        "bash vendor/bcgov/wordpress-utils/bin/install-wp-tests.sh wordpress_test root 'rootpassword' 0.0.0.0 latest"
+                    ],
+                    "production": [
+                        "composer validate",
+                        "composer phpcbf",
+                        "composer phpcs",
+                        "composer scan-wp-patterns",
+                        "npm run fix:js",
+                        "npm run fix:css",
+                        "npm run test",
+                        "npm run build"
+                    ],
+                    "phpcs-allow-todo": [
+                        "vendor/bin/phpcs -ps --standard=./vendor/bcgov/wordpress-utils/wordpress.xml  --exclude=Generic.Commenting.Todo --colors ./"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "vendor/bin/phpunit --configuration vendor/bcgov/wordpress-utils/phpunit.xml.dist"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "description": "Design System WordPress Theme",
+                "support": {
+                    "source": "https://github.com/bcgov/design-system-wordpress-theme/tree/release/1.15.0",
+                    "issues": "https://github.com/bcgov/design-system-wordpress-theme/issues"
+                },
+                "abandoned": true,
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov-theme/design-system-wordpress-theme",
+                "version": "dev-release/1.16.0",
+                "version_normalized": "dev-release/1.16.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/design-system-wordpress-theme.git",
+                    "reference": "d3ab4af46c9dda90d65cdd3d8fa88c21b7e02426"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-theme/design-system-wordpress-theme/bcgov-theme-design-system-wordpress-theme-d3ab4af46c9dda90d65cdd3d8fa88c21b7e02426-zip-e5b275.zip",
+                    "reference": "d3ab4af46c9dda90d65cdd3d8fa88c21b7e02426",
+                    "shasum": "3d3aa25b864e9973b16495111902483537d11dac"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-utils": "2.5.0",
+                    "yoast/phpunit-polyfills": "^1.0"
+                },
+                "time": "2026-07-21T14:57:14+00:00",
+                "type": "wordpress-theme",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\": [
+                            "src",
+                            "inc"
+                        ]
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "scan-wp-patterns": [
+                        "@php vendor/bin/scan-wp-patterns.php"
+                    ],
+                    "update-version": [
+                        "bash update-version.sh"
+                    ],
+                    "test-setup": [
+                        "bash vendor/bcgov/wordpress-utils/bin/install-wp-tests.sh wordpress_test root 'rootpassword' 0.0.0.0 latest"
+                    ],
+                    "production": [
+                        "composer validate",
+                        "composer phpcbf",
+                        "composer phpcs",
+                        "composer scan-wp-patterns",
+                        "npm run fix:js",
+                        "npm run fix:css",
+                        "npm run test",
+                        "npm run build"
+                    ],
+                    "phpcs-allow-todo": [
+                        "vendor/bin/phpcs -ps --standard=./vendor/bcgov/wordpress-utils/wordpress.xml  --exclude=Generic.Commenting.Todo --colors ./"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "vendor/bin/phpunit --configuration vendor/bcgov/wordpress-utils/phpunit.xml.dist"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "description": "Design System WordPress Theme",
+                "support": {
+                    "source": "https://github.com/bcgov/design-system-wordpress-theme/tree/release/1.16.0",
+                    "issues": "https://github.com/bcgov/design-system-wordpress-theme/issues"
+                },
+                "abandoned": true,
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov-theme/design-system-wordpress-theme",
+                "version": "dev-release/1.16.1",
+                "version_normalized": "dev-release/1.16.1",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/design-system-wordpress-theme.git",
+                    "reference": "cb828ef4f5f3e02b1910de0e5e7f821ca6db0977"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-theme/design-system-wordpress-theme/bcgov-theme-design-system-wordpress-theme-cb828ef4f5f3e02b1910de0e5e7f821ca6db0977-zip-9363a6.zip",
+                    "reference": "cb828ef4f5f3e02b1910de0e5e7f821ca6db0977",
+                    "shasum": "22206114b69cd8e3603ebca8eb2e62396988b523"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-utils": "2.5.0",
+                    "yoast/phpunit-polyfills": "^1.0"
+                },
+                "time": "2026-07-21T18:21:08+00:00",
+                "type": "wordpress-theme",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\": [
+                            "src",
+                            "inc"
+                        ]
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "scan-wp-patterns": [
+                        "@php vendor/bin/scan-wp-patterns.php"
+                    ],
+                    "update-version": [
+                        "bash update-version.sh"
+                    ],
+                    "test-setup": [
+                        "bash vendor/bcgov/wordpress-utils/bin/install-wp-tests.sh wordpress_test root 'rootpassword' 0.0.0.0 latest"
+                    ],
+                    "production": [
+                        "composer validate",
+                        "composer phpcbf",
+                        "composer phpcs",
+                        "composer scan-wp-patterns",
+                        "npm run fix:js",
+                        "npm run fix:css",
+                        "npm run test",
+                        "npm run build"
+                    ],
+                    "phpcs-allow-todo": [
+                        "vendor/bin/phpcs -ps --standard=./vendor/bcgov/wordpress-utils/wordpress.xml  --exclude=Generic.Commenting.Todo --colors ./"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "vendor/bin/phpunit --configuration vendor/bcgov/wordpress-utils/phpunit.xml.dist"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "description": "Design System WordPress Theme",
+                "support": {
+                    "source": "https://github.com/bcgov/design-system-wordpress-theme/tree/v1.16.0",
+                    "issues": "https://github.com/bcgov/design-system-wordpress-theme/issues"
+                },
+                "abandoned": true,
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov-theme/design-system-wordpress-theme",
+                "version": "dev-research/DESCW-3230_e23-proof-of-concept",
+                "version_normalized": "dev-research/DESCW-3230_e23-proof-of-concept",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/design-system-wordpress-theme.git",
+                    "reference": "16adb56b03ee40ad4c0a6bcee303a5e60e012468"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-theme/design-system-wordpress-theme/bcgov-theme-design-system-wordpress-theme-16adb56b03ee40ad4c0a6bcee303a5e60e012468-zip-d8fac8.zip",
+                    "reference": "16adb56b03ee40ad4c0a6bcee303a5e60e012468",
+                    "shasum": "5eec87fa1eecdfa208ea214857ffa32bc4fad3e9"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-utils": "2.5.0",
+                    "yoast/phpunit-polyfills": "^1.0"
+                },
+                "time": "2025-11-17T15:55:11+00:00",
+                "type": "wordpress-theme",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\": [
+                            "src",
+                            "inc"
+                        ]
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "scan-wp-patterns": [
+                        "@php vendor/bin/scan-wp-patterns.php"
+                    ],
+                    "update-version": [
+                        "bash update-version.sh"
+                    ],
+                    "test-setup": [
+                        "bash vendor/bcgov/wordpress-utils/bin/install-wp-tests.sh wordpress_test root 'rootpassword' 0.0.0.0 latest"
+                    ],
+                    "production": [
+                        "composer validate",
+                        "composer phpcbf",
+                        "composer phpcs",
+                        "composer scan-wp-patterns",
+                        "npm run fix:js",
+                        "npm run fix:css",
+                        "npm run test",
+                        "npm run build"
+                    ],
+                    "phpcs-allow-todo": [
+                        "vendor/bin/phpcs -ps --standard=./vendor/bcgov/wordpress-utils/wordpress.xml  --exclude=Generic.Commenting.Todo --colors ./"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "vendor/bin/phpunit --configuration vendor/bcgov/wordpress-utils/phpunit.xml.dist"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "description": "Design System WordPress Theme",
+                "support": {
+                    "source": "https://github.com/bcgov/design-system-wordpress-theme/tree/research/DESCW-3230_e23-proof-of-concept",
+                    "issues": "https://github.com/bcgov/design-system-wordpress-theme/issues"
+                },
+                "abandoned": true,
+                "published-time": "2026-11-19T05:22:26+00:00"
+            }
+        ]
+    }
+}

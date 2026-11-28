@@ -1,0 +1,708 @@
+{
+    "packages": {
+        "bcgov-theme/design-system-wordpress-child-theme-emergency-info": [
+            {
+                "name": "bcgov-theme/design-system-wordpress-child-theme-emergency-info",
+                "version": "dev-development",
+                "version_normalized": "dev-development",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/design-system-wordpress-child-theme-emergency-info.git",
+                    "reference": "7238bc5367c7eb904ec83f5153975300b8dce947"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-theme/design-system-wordpress-child-theme-emergency-info/bcgov-theme-design-system-wordpress-child-theme-emergency-info-7238bc5367c7eb904ec83f5153975300b8dce947-zip-24d0bf.zip",
+                    "reference": "7238bc5367c7eb904ec83f5153975300b8dce947",
+                    "shasum": "90fa8f7a97856256d428e3c077daa0e02f0342b2"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-utils": "2.5.0"
+                },
+                "time": "2025-06-24T22:33:18+00:00",
+                "type": "wordpress-theme",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\": [
+                            "src",
+                            "inc"
+                        ]
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "scan-wp-patterns": [
+                        "@php vendor/bin/scan-wp-patterns.php"
+                    ],
+                    "test-setup": [
+                        "bash vendor/bcgov/wordpress-utils/bin/install-wp-tests.sh wordpress_test root 'rootpassword' 0.0.0.0 latest"
+                    ],
+                    "production": [
+                        "composer validate",
+                        "composer phpcbf",
+                        "composer phpcs"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcs-allow-todo": [
+                        "vendor/bin/phpcs -ps --standard=./vendor/bcgov/wordpress-utils/wordpress.xml  --exclude=Generic.Commenting.Todo --colors ./"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "vendor/bin/phpunit --configuration vendor/bcgov/wordpress-utils/phpunit.xml.dist"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "description": "Emergency info child theme",
+                "support": {
+                    "source": "https://github.com/bcgov/design-system-wordpress-child-theme-emergency-info/tree/v1.1.0",
+                    "issues": "https://github.com/bcgov/design-system-wordpress-child-theme-emergency-info/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov-theme/design-system-wordpress-child-theme-emergency-info",
+                "version": "dev-feature/DSWP-1443-update-coastal-flooding-link",
+                "version_normalized": "dev-feature/DSWP-1443-update-coastal-flooding-link",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/design-system-wordpress-child-theme-emergency-info.git",
+                    "reference": "9b3a07be697f4b580b3e0e7037ac4aaef5b296c5"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-theme/design-system-wordpress-child-theme-emergency-info/bcgov-theme-design-system-wordpress-child-theme-emergency-info-9b3a07be697f4b580b3e0e7037ac4aaef5b296c5-zip-4fa2c7.zip",
+                    "reference": "9b3a07be697f4b580b3e0e7037ac4aaef5b296c5",
+                    "shasum": "9392d288d883ada35f464444aec1bb39409b901a"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-utils": "2.7.0"
+                },
+                "time": "2026-11-24T21:14:57+00:00",
+                "type": "wordpress-theme",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\": [
+                            "src",
+                            "inc"
+                        ]
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "scan-wp-patterns": [
+                        "@php vendor/bin/scan-wp-patterns.php"
+                    ],
+                    "test-setup": [
+                        "bash vendor/bcgov/wordpress-utils/bin/install-wp-tests.sh wordpress_test root 'rootpassword' 0.0.0.0 latest"
+                    ],
+                    "production": [
+                        "composer validate",
+                        "composer phpcs"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcs-allow-todo": [
+                        "vendor/bin/phpcs -ps --standard=./vendor/bcgov/wordpress-utils/wordpress.xml  --exclude=Generic.Commenting.Todo --colors ./"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "vendor/bin/phpunit --configuration vendor/bcgov/wordpress-utils/phpunit.xml.dist"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "description": "Emergency info child theme",
+                "support": {
+                    "source": "https://github.com/bcgov/design-system-wordpress-child-theme-emergency-info/tree/feature/DSWP-1443-update-coastal-flooding-link",
+                    "issues": "https://github.com/bcgov/design-system-wordpress-child-theme-emergency-info/issues"
+                },
+                "published-time": "2026-11-25T06:03:52+00:00"
+            },
+            {
+                "name": "bcgov-theme/design-system-wordpress-child-theme-emergency-info",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/design-system-wordpress-child-theme-emergency-info.git",
+                    "reference": "0128660e9bb4894ab7943540d59534c22c5a03f5"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-theme/design-system-wordpress-child-theme-emergency-info/bcgov-theme-design-system-wordpress-child-theme-emergency-info-0128660e9bb4894ab7943540d59534c22c5a03f5-zip-6c6e3f.zip",
+                    "reference": "0128660e9bb4894ab7943540d59534c22c5a03f5",
+                    "shasum": "4e19217155c3296948df7ef2b0f32eedfc1b1f7f"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-utils": "2.7.0"
+                },
+                "time": "2026-11-24T22:45:27+00:00",
+                "default-branch": true,
+                "type": "wordpress-theme",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\": [
+                            "src",
+                            "inc"
+                        ]
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "scan-wp-patterns": [
+                        "@php vendor/bin/scan-wp-patterns.php"
+                    ],
+                    "test-setup": [
+                        "bash vendor/bcgov/wordpress-utils/bin/install-wp-tests.sh wordpress_test root 'rootpassword' 0.0.0.0 latest"
+                    ],
+                    "production": [
+                        "composer validate",
+                        "composer phpcs"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcs-allow-todo": [
+                        "vendor/bin/phpcs -ps --standard=./vendor/bcgov/wordpress-utils/wordpress.xml  --exclude=Generic.Commenting.Todo --colors ./"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "vendor/bin/phpunit --configuration vendor/bcgov/wordpress-utils/phpunit.xml.dist"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "description": "Emergency info child theme",
+                "support": {
+                    "source": "https://github.com/bcgov/design-system-wordpress-child-theme-emergency-info/tree/v1.6.3",
+                    "issues": "https://github.com/bcgov/design-system-wordpress-child-theme-emergency-info/issues"
+                },
+                "published-time": "2026-11-25T06:03:52+00:00"
+            },
+            {
+                "name": "bcgov-theme/design-system-wordpress-child-theme-emergency-info",
+                "version": "dev-release/1.3.0",
+                "version_normalized": "dev-release/1.3.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/design-system-wordpress-child-theme-emergency-info.git",
+                    "reference": "4dd915930e84bfc84a8af45c682733353d65d6ea"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-theme/design-system-wordpress-child-theme-emergency-info/bcgov-theme-design-system-wordpress-child-theme-emergency-info-4dd915930e84bfc84a8af45c682733353d65d6ea-zip-813b26.zip",
+                    "reference": "4dd915930e84bfc84a8af45c682733353d65d6ea",
+                    "shasum": "0a6bd8b07eceafd84847c88e1f628d56d6c1ca91"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-utils": "2.7.0"
+                },
+                "time": "2025-11-20T16:12:05+00:00",
+                "type": "wordpress-theme",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\": [
+                            "src",
+                            "inc"
+                        ]
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "scan-wp-patterns": [
+                        "@php vendor/bin/scan-wp-patterns.php"
+                    ],
+                    "test-setup": [
+                        "bash vendor/bcgov/wordpress-utils/bin/install-wp-tests.sh wordpress_test root 'rootpassword' 0.0.0.0 latest"
+                    ],
+                    "production": [
+                        "composer validate",
+                        "composer phpcs"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcs-allow-todo": [
+                        "vendor/bin/phpcs -ps --standard=./vendor/bcgov/wordpress-utils/wordpress.xml  --exclude=Generic.Commenting.Todo --colors ./"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "vendor/bin/phpunit --configuration vendor/bcgov/wordpress-utils/phpunit.xml.dist"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "description": "Emergency info child theme",
+                "support": {
+                    "source": "https://github.com/bcgov/design-system-wordpress-child-theme-emergency-info/tree/release/1.3.0",
+                    "issues": "https://github.com/bcgov/design-system-wordpress-child-theme-emergency-info/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov-theme/design-system-wordpress-child-theme-emergency-info",
+                "version": "dev-release/1.4.0",
+                "version_normalized": "dev-release/1.4.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/design-system-wordpress-child-theme-emergency-info.git",
+                    "reference": "b4ce0327ffff3a282aa5544da99a2ad639b0fe5d"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-theme/design-system-wordpress-child-theme-emergency-info/bcgov-theme-design-system-wordpress-child-theme-emergency-info-b4ce0327ffff3a282aa5544da99a2ad639b0fe5d-zip-85bac2.zip",
+                    "reference": "b4ce0327ffff3a282aa5544da99a2ad639b0fe5d",
+                    "shasum": "59c749220998bc0360fbf633eaa89415cbd61272"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-utils": "2.7.0"
+                },
+                "time": "2025-12-23T16:28:32+00:00",
+                "type": "wordpress-theme",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\": [
+                            "src",
+                            "inc"
+                        ]
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "scan-wp-patterns": [
+                        "@php vendor/bin/scan-wp-patterns.php"
+                    ],
+                    "test-setup": [
+                        "bash vendor/bcgov/wordpress-utils/bin/install-wp-tests.sh wordpress_test root 'rootpassword' 0.0.0.0 latest"
+                    ],
+                    "production": [
+                        "composer validate",
+                        "composer phpcs"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcs-allow-todo": [
+                        "vendor/bin/phpcs -ps --standard=./vendor/bcgov/wordpress-utils/wordpress.xml  --exclude=Generic.Commenting.Todo --colors ./"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "vendor/bin/phpunit --configuration vendor/bcgov/wordpress-utils/phpunit.xml.dist"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "description": "Emergency info child theme",
+                "support": {
+                    "source": "https://github.com/bcgov/design-system-wordpress-child-theme-emergency-info/tree/release/1.4.0",
+                    "issues": "https://github.com/bcgov/design-system-wordpress-child-theme-emergency-info/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov-theme/design-system-wordpress-child-theme-emergency-info",
+                "version": "dev-release/1.4.1",
+                "version_normalized": "dev-release/1.4.1",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/design-system-wordpress-child-theme-emergency-info.git",
+                    "reference": "3f8a891fe35f37c1a59d8f16699276a3adb1a6d5"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-theme/design-system-wordpress-child-theme-emergency-info/bcgov-theme-design-system-wordpress-child-theme-emergency-info-3f8a891fe35f37c1a59d8f16699276a3adb1a6d5-zip-6ee671.zip",
+                    "reference": "3f8a891fe35f37c1a59d8f16699276a3adb1a6d5",
+                    "shasum": "f6243a02a78c775aa8dafc4c960c90c7bf392b04"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-utils": "2.7.0"
+                },
+                "time": "2025-12-23T23:13:52+00:00",
+                "type": "wordpress-theme",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\": [
+                            "src",
+                            "inc"
+                        ]
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "scan-wp-patterns": [
+                        "@php vendor/bin/scan-wp-patterns.php"
+                    ],
+                    "test-setup": [
+                        "bash vendor/bcgov/wordpress-utils/bin/install-wp-tests.sh wordpress_test root 'rootpassword' 0.0.0.0 latest"
+                    ],
+                    "production": [
+                        "composer validate",
+                        "composer phpcs"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcs-allow-todo": [
+                        "vendor/bin/phpcs -ps --standard=./vendor/bcgov/wordpress-utils/wordpress.xml  --exclude=Generic.Commenting.Todo --colors ./"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "vendor/bin/phpunit --configuration vendor/bcgov/wordpress-utils/phpunit.xml.dist"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "description": "Emergency info child theme",
+                "support": {
+                    "source": "https://github.com/bcgov/design-system-wordpress-child-theme-emergency-info/tree/release/1.4.1",
+                    "issues": "https://github.com/bcgov/design-system-wordpress-child-theme-emergency-info/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov-theme/design-system-wordpress-child-theme-emergency-info",
+                "version": "dev-release/1.5.0",
+                "version_normalized": "dev-release/1.5.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/design-system-wordpress-child-theme-emergency-info.git",
+                    "reference": "df1816a13ea8b35e29dd16369d0cb98ea4837ad6"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-theme/design-system-wordpress-child-theme-emergency-info/bcgov-theme-design-system-wordpress-child-theme-emergency-info-df1816a13ea8b35e29dd16369d0cb98ea4837ad6-zip-7f187f.zip",
+                    "reference": "df1816a13ea8b35e29dd16369d0cb98ea4837ad6",
+                    "shasum": "1c3ac007954c7e3f89cc6d1effa570cf1f0f04f3"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-utils": "2.7.0"
+                },
+                "time": "2026-04-29T15:14:26+00:00",
+                "type": "wordpress-theme",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\": [
+                            "src",
+                            "inc"
+                        ]
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "scan-wp-patterns": [
+                        "@php vendor/bin/scan-wp-patterns.php"
+                    ],
+                    "test-setup": [
+                        "bash vendor/bcgov/wordpress-utils/bin/install-wp-tests.sh wordpress_test root 'rootpassword' 0.0.0.0 latest"
+                    ],
+                    "production": [
+                        "composer validate",
+                        "composer phpcs"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcs-allow-todo": [
+                        "vendor/bin/phpcs -ps --standard=./vendor/bcgov/wordpress-utils/wordpress.xml  --exclude=Generic.Commenting.Todo --colors ./"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "vendor/bin/phpunit --configuration vendor/bcgov/wordpress-utils/phpunit.xml.dist"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "description": "Emergency info child theme",
+                "support": {
+                    "source": "https://github.com/bcgov/design-system-wordpress-child-theme-emergency-info/tree/v1.5.0",
+                    "issues": "https://github.com/bcgov/design-system-wordpress-child-theme-emergency-info/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov-theme/design-system-wordpress-child-theme-emergency-info",
+                "version": "dev-release/1.6.0",
+                "version_normalized": "dev-release/1.6.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/design-system-wordpress-child-theme-emergency-info.git",
+                    "reference": "56e6156c304381c15d5d6e341164cb8729df0bf8"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-theme/design-system-wordpress-child-theme-emergency-info/bcgov-theme-design-system-wordpress-child-theme-emergency-info-56e6156c304381c15d5d6e341164cb8729df0bf8-zip-ef3f6f.zip",
+                    "reference": "56e6156c304381c15d5d6e341164cb8729df0bf8",
+                    "shasum": "98a6a5387004a5bf750d0776c0ae157e5f03940f"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-utils": "2.7.0"
+                },
+                "time": "2026-07-08T16:06:25+00:00",
+                "type": "wordpress-theme",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\": [
+                            "src",
+                            "inc"
+                        ]
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "scan-wp-patterns": [
+                        "@php vendor/bin/scan-wp-patterns.php"
+                    ],
+                    "test-setup": [
+                        "bash vendor/bcgov/wordpress-utils/bin/install-wp-tests.sh wordpress_test root 'rootpassword' 0.0.0.0 latest"
+                    ],
+                    "production": [
+                        "composer validate",
+                        "composer phpcs"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcs-allow-todo": [
+                        "vendor/bin/phpcs -ps --standard=./vendor/bcgov/wordpress-utils/wordpress.xml  --exclude=Generic.Commenting.Todo --colors ./"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "vendor/bin/phpunit --configuration vendor/bcgov/wordpress-utils/phpunit.xml.dist"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "description": "Emergency info child theme",
+                "support": {
+                    "source": "https://github.com/bcgov/design-system-wordpress-child-theme-emergency-info/tree/v1.6.0",
+                    "issues": "https://github.com/bcgov/design-system-wordpress-child-theme-emergency-info/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov-theme/design-system-wordpress-child-theme-emergency-info",
+                "version": "dev-release/1.6.1",
+                "version_normalized": "dev-release/1.6.1",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/design-system-wordpress-child-theme-emergency-info.git",
+                    "reference": "87eac70072805288699ef799b65c7bad5c09ad52"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-theme/design-system-wordpress-child-theme-emergency-info/bcgov-theme-design-system-wordpress-child-theme-emergency-info-87eac70072805288699ef799b65c7bad5c09ad52-zip-cdd78b.zip",
+                    "reference": "87eac70072805288699ef799b65c7bad5c09ad52",
+                    "shasum": "5afe53977d3c7655d4a35939f4961e05546dde88"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-utils": "2.7.0"
+                },
+                "time": "2026-07-24T15:25:30+00:00",
+                "type": "wordpress-theme",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\": [
+                            "src",
+                            "inc"
+                        ]
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "scan-wp-patterns": [
+                        "@php vendor/bin/scan-wp-patterns.php"
+                    ],
+                    "test-setup": [
+                        "bash vendor/bcgov/wordpress-utils/bin/install-wp-tests.sh wordpress_test root 'rootpassword' 0.0.0.0 latest"
+                    ],
+                    "production": [
+                        "composer validate",
+                        "composer phpcs"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcs-allow-todo": [
+                        "vendor/bin/phpcs -ps --standard=./vendor/bcgov/wordpress-utils/wordpress.xml  --exclude=Generic.Commenting.Todo --colors ./"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "vendor/bin/phpunit --configuration vendor/bcgov/wordpress-utils/phpunit.xml.dist"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "description": "Emergency info child theme",
+                "support": {
+                    "source": "https://github.com/bcgov/design-system-wordpress-child-theme-emergency-info/tree/release/1.6.1",
+                    "issues": "https://github.com/bcgov/design-system-wordpress-child-theme-emergency-info/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov-theme/design-system-wordpress-child-theme-emergency-info",
+                "version": "dev-release/1.6.2",
+                "version_normalized": "dev-release/1.6.2",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/design-system-wordpress-child-theme-emergency-info.git",
+                    "reference": "939e7903aea63ff36aebb11d00f2c6fee97a1211"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-theme/design-system-wordpress-child-theme-emergency-info/bcgov-theme-design-system-wordpress-child-theme-emergency-info-939e7903aea63ff36aebb11d00f2c6fee97a1211-zip-38f55e.zip",
+                    "reference": "939e7903aea63ff36aebb11d00f2c6fee97a1211",
+                    "shasum": "183b4edb49e893981b128aed371fc06f090f6669"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-utils": "2.7.0"
+                },
+                "time": "2026-07-28T16:30:05+00:00",
+                "type": "wordpress-theme",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\": [
+                            "src",
+                            "inc"
+                        ]
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\DesignSystem\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "scan-wp-patterns": [
+                        "@php vendor/bin/scan-wp-patterns.php"
+                    ],
+                    "test-setup": [
+                        "bash vendor/bcgov/wordpress-utils/bin/install-wp-tests.sh wordpress_test root 'rootpassword' 0.0.0.0 latest"
+                    ],
+                    "production": [
+                        "composer validate",
+                        "composer phpcs"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcs-allow-todo": [
+                        "vendor/bin/phpcs -ps --standard=./vendor/bcgov/wordpress-utils/wordpress.xml  --exclude=Generic.Commenting.Todo --colors ./"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "vendor/bin/phpunit --configuration vendor/bcgov/wordpress-utils/phpunit.xml.dist"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "description": "Emergency info child theme",
+                "support": {
+                    "source": "https://github.com/bcgov/design-system-wordpress-child-theme-emergency-info/tree/release/1.6.2",
+                    "issues": "https://github.com/bcgov/design-system-wordpress-child-theme-emergency-info/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            }
+        ]
+    }
+}

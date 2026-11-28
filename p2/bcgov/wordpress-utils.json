@@ -1,0 +1,1280 @@
+{
+    "packages": {
+        "bcgov/wordpress-utils": [
+            {
+                "name": "bcgov/wordpress-utils",
+                "version": "0.0.1",
+                "version_normalized": "0.0.1.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/wordpress-utils.git",
+                    "reference": "aa71e44582f9f68f315c423ee048376f29082f38"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov/wordpress-utils/bcgov-wordpress-utils-aa71e44582f9f68f315c423ee048376f29082f38-zip-aa8fcc.zip",
+                    "reference": "aa71e44582f9f68f315c423ee048376f29082f38",
+                    "shasum": "9ca99a00209c4132cae22826a36e0774c29d0e80"
+                },
+                "require": {
+                    "brain/monkey": "^2.6",
+                    "composer/composer": "^2.8",
+                    "composer/installers": "~1.0",
+                    "php": ">=7.4",
+                    "phpcompatibility/phpcompatibility-wp": "^2.1",
+                    "phpunit/phpunit": "^9.5",
+                    "wp-coding-standards/wpcs": "^3.0.1"
+                },
+                "require-dev": {
+                    "phpcsstandards/phpcsutils": "^1.0"
+                },
+                "time": "2025-06-06T20:35:12+00:00",
+                "bin": [
+                    "bin/scan-wp-patterns.php"
+                ],
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Script\\": "src/"
+                    }
+                },
+                "scripts": {
+                    "phpcs": [
+                        "./vendor/bin/phpcs --config-set --config-set error_severity 1 -i;",
+                        "./vendor/bin/phpcs -ps --colors ./ &2>/dev/null;"
+                    ],
+                    "phpcbf": [
+                        "./vendor/bin/phpcbf -ps --colors ./ &2>/dev/null;"
+                    ],
+                    "test": [
+                        "./vendor/bin/phpunit"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ],
+                    "checklist": [
+                        "Bcgov\\Script\\Checklists::postProductionChecksForScripts"
+                    ]
+                },
+                "support": {
+                    "source": "https://github.com/bcgov/wordpress-utils/tree/0.0.1",
+                    "issues": "https://github.com/bcgov/wordpress-utils/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov/wordpress-utils",
+                "version": "1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/wordpress-utils.git",
+                    "reference": "3f21e07888299835c439d49c936f8c49f21ad8ba"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov/wordpress-utils/bcgov-wordpress-utils-3f21e07888299835c439d49c936f8c49f21ad8ba-zip-e26faa.zip",
+                    "reference": "3f21e07888299835c439d49c936f8c49f21ad8ba",
+                    "shasum": "5774df5039a02115b11e25fc8e2107a54994e58d"
+                },
+                "require": {
+                    "brain/monkey": "^2.6",
+                    "composer/installers": "~1.0",
+                    "php": ">=7.4",
+                    "phpunit/phpunit": "^9.5",
+                    "wp-coding-standards/wpcs": "~2.2"
+                },
+                "time": "2022-02-26T00:27:01+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Script\\": "src/"
+                    }
+                },
+                "scripts": {
+                    "phpcs": [
+                        "./vendor/bin/phpcs --config-set --config-set error_severity 1 -i;",
+                        "./vendor/bin/phpcs -ps --colors ./ &2>/dev/null;"
+                    ],
+                    "phpcbf": [
+                        "./vendor/bin/phpcbf -ps --colors ./ &2>/dev/null;"
+                    ],
+                    "test": [
+                        "./vendor/bin/phpunit"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ],
+                    "checklist": [
+                        "Bcgov\\Script\\Checklists::postProductionChecksForScripts"
+                    ]
+                },
+                "support": {
+                    "source": "https://github.com/bcgov/wordpress-utils/tree/1.0.0",
+                    "issues": "https://github.com/bcgov/wordpress-utils/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov/wordpress-utils",
+                "version": "1.0.1",
+                "version_normalized": "1.0.1.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/wordpress-utils.git",
+                    "reference": "f951e410f479525d1cc59ae07ac4bd4c9216d306"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov/wordpress-utils/bcgov-wordpress-utils-f951e410f479525d1cc59ae07ac4bd4c9216d306-zip-1d243d.zip",
+                    "reference": "f951e410f479525d1cc59ae07ac4bd4c9216d306",
+                    "shasum": "3551b1c89239d4877c8eaaa5f4dee8f2cc1eea4e"
+                },
+                "require": {
+                    "brain/monkey": "^2.6",
+                    "composer/installers": "~1.0",
+                    "php": ">=7.4",
+                    "phpunit/phpunit": "^9.5",
+                    "wp-coding-standards/wpcs": "~2.2"
+                },
+                "time": "2022-04-06T17:57:14+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Script\\": "src/"
+                    }
+                },
+                "scripts": {
+                    "phpcs": [
+                        "./vendor/bin/phpcs --config-set --config-set error_severity 1 -i;",
+                        "./vendor/bin/phpcs -ps --colors ./ &2>/dev/null;"
+                    ],
+                    "phpcbf": [
+                        "./vendor/bin/phpcbf -ps --colors ./ &2>/dev/null;"
+                    ],
+                    "test": [
+                        "./vendor/bin/phpunit"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ],
+                    "checklist": [
+                        "Bcgov\\Script\\Checklists::postProductionChecksForScripts"
+                    ]
+                },
+                "support": {
+                    "source": "https://github.com/bcgov/wordpress-utils/tree/1.0.1",
+                    "issues": "https://github.com/bcgov/wordpress-utils/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov/wordpress-utils",
+                "version": "1.1.0",
+                "version_normalized": "1.1.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/wordpress-utils.git",
+                    "reference": "a71d39c67edf4cfe931a7cbaa9c4c4c0f103d2b0"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov/wordpress-utils/bcgov-wordpress-utils-a71d39c67edf4cfe931a7cbaa9c4c4c0f103d2b0-zip-25fab8.zip",
+                    "reference": "a71d39c67edf4cfe931a7cbaa9c4c4c0f103d2b0",
+                    "shasum": "aa93f8f7fb5b554f02c23cdc2ad20ba5fa1b967c"
+                },
+                "require": {
+                    "brain/monkey": "^2.6",
+                    "composer/installers": "~1.0",
+                    "php": ">=7.4",
+                    "phpunit/phpunit": "^9.5",
+                    "wp-coding-standards/wpcs": "~2.2"
+                },
+                "time": "2023-01-18T00:06:44+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Script\\": "src/"
+                    }
+                },
+                "scripts": {
+                    "phpcs": [
+                        "./vendor/bin/phpcs --config-set --config-set error_severity 1 -i;",
+                        "./vendor/bin/phpcs -ps --colors ./ &2>/dev/null;"
+                    ],
+                    "phpcbf": [
+                        "./vendor/bin/phpcbf -ps --colors ./ &2>/dev/null;"
+                    ],
+                    "test": [
+                        "./vendor/bin/phpunit"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ],
+                    "checklist": [
+                        "Bcgov\\Script\\Checklists::postProductionChecksForScripts"
+                    ]
+                },
+                "support": {
+                    "source": "https://github.com/bcgov/wordpress-utils/tree/1.1.0",
+                    "issues": "https://github.com/bcgov/wordpress-utils/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov/wordpress-utils",
+                "version": "1.1.1",
+                "version_normalized": "1.1.1.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/wordpress-utils.git",
+                    "reference": "b72074662a5e6225f66af7692a8878ddb7b056fc"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov/wordpress-utils/bcgov-wordpress-utils-b72074662a5e6225f66af7692a8878ddb7b056fc-zip-697445.zip",
+                    "reference": "b72074662a5e6225f66af7692a8878ddb7b056fc",
+                    "shasum": "3c5bede4b88e75f00ac2befd046d00c8ab01f071"
+                },
+                "require": {
+                    "brain/monkey": "^2.6",
+                    "composer/installers": "~1.0",
+                    "php": ">=7.4",
+                    "phpunit/phpunit": "^9.5",
+                    "wp-coding-standards/wpcs": "~2.2"
+                },
+                "time": "2023-03-27T17:40:39+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Script\\": "src/"
+                    }
+                },
+                "scripts": {
+                    "phpcs": [
+                        "./vendor/bin/phpcs --config-set --config-set error_severity 1 -i;",
+                        "./vendor/bin/phpcs -ps --colors ./ &2>/dev/null;"
+                    ],
+                    "phpcbf": [
+                        "./vendor/bin/phpcbf -ps --colors ./ &2>/dev/null;"
+                    ],
+                    "test": [
+                        "./vendor/bin/phpunit"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ],
+                    "checklist": [
+                        "Bcgov\\Script\\Checklists::postProductionChecksForScripts"
+                    ]
+                },
+                "support": {
+                    "source": "https://github.com/bcgov/wordpress-utils/tree/1.1.1",
+                    "issues": "https://github.com/bcgov/wordpress-utils/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov/wordpress-utils",
+                "version": "2.0.0",
+                "version_normalized": "2.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/wordpress-utils.git",
+                    "reference": "fbbff11d03db7efac41a65b1e06b6feed7acef61"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov/wordpress-utils/bcgov-wordpress-utils-fbbff11d03db7efac41a65b1e06b6feed7acef61-zip-4f7066.zip",
+                    "reference": "fbbff11d03db7efac41a65b1e06b6feed7acef61",
+                    "shasum": "edbfd40b695d168db84cce6b821b894c552e9915"
+                },
+                "require": {
+                    "brain/monkey": "^2.6",
+                    "composer/installers": "~1.0",
+                    "php": ">=7.4",
+                    "phpunit/phpunit": "^9.5",
+                    "wp-coding-standards/wpcs": "^3.0.1"
+                },
+                "require-dev": {
+                    "phpcsstandards/phpcsutils": "^1.0"
+                },
+                "time": "2023-10-13T15:05:13+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Script\\": "src/"
+                    }
+                },
+                "scripts": {
+                    "phpcs": [
+                        "./vendor/bin/phpcs --config-set --config-set error_severity 1 -i;",
+                        "./vendor/bin/phpcs -ps --colors ./ &2>/dev/null;"
+                    ],
+                    "phpcbf": [
+                        "./vendor/bin/phpcbf -ps --colors ./ &2>/dev/null;"
+                    ],
+                    "test": [
+                        "./vendor/bin/phpunit"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ],
+                    "checklist": [
+                        "Bcgov\\Script\\Checklists::postProductionChecksForScripts"
+                    ]
+                },
+                "support": {
+                    "source": "https://github.com/bcgov/wordpress-utils/tree/2.0.0",
+                    "issues": "https://github.com/bcgov/wordpress-utils/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov/wordpress-utils",
+                "version": "2.0.1",
+                "version_normalized": "2.0.1.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/wordpress-utils.git",
+                    "reference": "ae98c0b6fb4c093baaef795825b6d0aa9c2085f6"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov/wordpress-utils/bcgov-wordpress-utils-ae98c0b6fb4c093baaef795825b6d0aa9c2085f6-zip-a72854.zip",
+                    "reference": "ae98c0b6fb4c093baaef795825b6d0aa9c2085f6",
+                    "shasum": "c6d8a809f74686e64c44b750e76a82831caded13"
+                },
+                "require": {
+                    "brain/monkey": "^2.6",
+                    "composer/installers": "~1.0",
+                    "php": ">=7.4",
+                    "phpunit/phpunit": "^9.5",
+                    "wp-coding-standards/wpcs": "^3.0.1"
+                },
+                "require-dev": {
+                    "phpcsstandards/phpcsutils": "^1.0"
+                },
+                "time": "2023-10-25T20:16:24+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Script\\": "src/"
+                    }
+                },
+                "scripts": {
+                    "phpcs": [
+                        "./vendor/bin/phpcs --config-set --config-set error_severity 1 -i;",
+                        "./vendor/bin/phpcs -ps --colors ./ &2>/dev/null;"
+                    ],
+                    "phpcbf": [
+                        "./vendor/bin/phpcbf -ps --colors ./ &2>/dev/null;"
+                    ],
+                    "test": [
+                        "./vendor/bin/phpunit"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ],
+                    "checklist": [
+                        "Bcgov\\Script\\Checklists::postProductionChecksForScripts"
+                    ]
+                },
+                "support": {
+                    "source": "https://github.com/bcgov/wordpress-utils/tree/2.0.1",
+                    "issues": "https://github.com/bcgov/wordpress-utils/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov/wordpress-utils",
+                "version": "2.0.2",
+                "version_normalized": "2.0.2.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/wordpress-utils.git",
+                    "reference": "aa045c0e05bfc511601c053fd1c3f1f80a89fb01"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov/wordpress-utils/bcgov-wordpress-utils-aa045c0e05bfc511601c053fd1c3f1f80a89fb01-zip-13d02e.zip",
+                    "reference": "aa045c0e05bfc511601c053fd1c3f1f80a89fb01",
+                    "shasum": "07ffcd2eec2adcaf3b7cf57d18f61c77491c9074"
+                },
+                "require": {
+                    "brain/monkey": "^2.6",
+                    "composer/installers": "~1.0",
+                    "php": ">=7.4",
+                    "phpunit/phpunit": "^9.5",
+                    "wp-coding-standards/wpcs": "^3.0.1"
+                },
+                "require-dev": {
+                    "phpcsstandards/phpcsutils": "^1.0"
+                },
+                "time": "2024-01-05T16:17:10+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Script\\": "src/"
+                    }
+                },
+                "scripts": {
+                    "phpcs": [
+                        "./vendor/bin/phpcs --config-set --config-set error_severity 1 -i;",
+                        "./vendor/bin/phpcs -ps --colors ./ &2>/dev/null;"
+                    ],
+                    "phpcbf": [
+                        "./vendor/bin/phpcbf -ps --colors ./ &2>/dev/null;"
+                    ],
+                    "test": [
+                        "./vendor/bin/phpunit"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ],
+                    "checklist": [
+                        "Bcgov\\Script\\Checklists::postProductionChecksForScripts"
+                    ]
+                },
+                "support": {
+                    "source": "https://github.com/bcgov/wordpress-utils/tree/2.0.2",
+                    "issues": "https://github.com/bcgov/wordpress-utils/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov/wordpress-utils",
+                "version": "2.1.0",
+                "version_normalized": "2.1.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/wordpress-utils.git",
+                    "reference": "c7b29f7857f071b067bcce17a57edd509719b120"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov/wordpress-utils/bcgov-wordpress-utils-c7b29f7857f071b067bcce17a57edd509719b120-zip-30b561.zip",
+                    "reference": "c7b29f7857f071b067bcce17a57edd509719b120",
+                    "shasum": "1464a98846285d728aa5ab47f0b99a84646efeaa"
+                },
+                "require": {
+                    "brain/monkey": "^2.6",
+                    "composer/installers": "~1.0",
+                    "php": ">=7.4",
+                    "phpcompatibility/phpcompatibility-wp": "^2.1",
+                    "phpunit/phpunit": "^9.5",
+                    "wp-coding-standards/wpcs": "^3.0.1"
+                },
+                "require-dev": {
+                    "phpcsstandards/phpcsutils": "^1.0"
+                },
+                "time": "2024-01-11T21:24:49+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Script\\": "src/"
+                    }
+                },
+                "scripts": {
+                    "phpcs": [
+                        "./vendor/bin/phpcs --config-set --config-set error_severity 1 -i;",
+                        "./vendor/bin/phpcs -ps --colors ./ &2>/dev/null;"
+                    ],
+                    "phpcbf": [
+                        "./vendor/bin/phpcbf -ps --colors ./ &2>/dev/null;"
+                    ],
+                    "test": [
+                        "./vendor/bin/phpunit"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ],
+                    "checklist": [
+                        "Bcgov\\Script\\Checklists::postProductionChecksForScripts"
+                    ]
+                },
+                "support": {
+                    "source": "https://github.com/bcgov/wordpress-utils/tree/2.1.0",
+                    "issues": "https://github.com/bcgov/wordpress-utils/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov/wordpress-utils",
+                "version": "2.1.1",
+                "version_normalized": "2.1.1.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/wordpress-utils.git",
+                    "reference": "88e57b36ba349e7f45d27bcf220e31218a170404"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov/wordpress-utils/bcgov-wordpress-utils-88e57b36ba349e7f45d27bcf220e31218a170404-zip-3ba4e7.zip",
+                    "reference": "88e57b36ba349e7f45d27bcf220e31218a170404",
+                    "shasum": "c7326ebac85e818fe7976615ed465a9fd778381f"
+                },
+                "require": {
+                    "brain/monkey": "^2.6",
+                    "composer/installers": "~1.0",
+                    "php": ">=7.4",
+                    "phpcompatibility/phpcompatibility-wp": "^2.1",
+                    "phpunit/phpunit": "^9.5",
+                    "wp-coding-standards/wpcs": "^3.0.1"
+                },
+                "require-dev": {
+                    "phpcsstandards/phpcsutils": "^1.0"
+                },
+                "time": "2024-02-08T17:05:21+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Script\\": "src/"
+                    }
+                },
+                "scripts": {
+                    "phpcs": [
+                        "./vendor/bin/phpcs --config-set --config-set error_severity 1 -i;",
+                        "./vendor/bin/phpcs -ps --colors ./ &2>/dev/null;"
+                    ],
+                    "phpcbf": [
+                        "./vendor/bin/phpcbf -ps --colors ./ &2>/dev/null;"
+                    ],
+                    "test": [
+                        "./vendor/bin/phpunit"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ],
+                    "checklist": [
+                        "Bcgov\\Script\\Checklists::postProductionChecksForScripts"
+                    ]
+                },
+                "support": {
+                    "source": "https://github.com/bcgov/wordpress-utils/tree/2.1.1",
+                    "issues": "https://github.com/bcgov/wordpress-utils/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov/wordpress-utils",
+                "version": "2.1.2",
+                "version_normalized": "2.1.2.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/wordpress-utils.git",
+                    "reference": "510d023da07b8a04ff0a7b9b8cd7858c4b327dc5"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov/wordpress-utils/bcgov-wordpress-utils-510d023da07b8a04ff0a7b9b8cd7858c4b327dc5-zip-21c235.zip",
+                    "reference": "510d023da07b8a04ff0a7b9b8cd7858c4b327dc5",
+                    "shasum": "6684e20e79138ec7bc57abf89b923ee193333610"
+                },
+                "require": {
+                    "brain/monkey": "^2.6",
+                    "composer/installers": "~1.0",
+                    "php": ">=7.4",
+                    "phpcompatibility/phpcompatibility-wp": "^2.1",
+                    "phpunit/phpunit": "^9.5",
+                    "wp-coding-standards/wpcs": "^3.0.1"
+                },
+                "require-dev": {
+                    "phpcsstandards/phpcsutils": "^1.0"
+                },
+                "time": "2024-03-09T04:49:10+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Script\\": "src/"
+                    }
+                },
+                "scripts": {
+                    "phpcs": [
+                        "./vendor/bin/phpcs --config-set --config-set error_severity 1 -i;",
+                        "./vendor/bin/phpcs -ps --colors ./ &2>/dev/null;"
+                    ],
+                    "phpcbf": [
+                        "./vendor/bin/phpcbf -ps --colors ./ &2>/dev/null;"
+                    ],
+                    "test": [
+                        "./vendor/bin/phpunit"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ],
+                    "checklist": [
+                        "Bcgov\\Script\\Checklists::postProductionChecksForScripts"
+                    ]
+                },
+                "support": {
+                    "source": "https://github.com/bcgov/wordpress-utils/tree/2.1.2",
+                    "issues": "https://github.com/bcgov/wordpress-utils/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov/wordpress-utils",
+                "version": "2.1.3",
+                "version_normalized": "2.1.3.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/wordpress-utils.git",
+                    "reference": "7f8111e84272d674e8664f960635ed5be9e2e2d0"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov/wordpress-utils/bcgov-wordpress-utils-7f8111e84272d674e8664f960635ed5be9e2e2d0-zip-c0b24e.zip",
+                    "reference": "7f8111e84272d674e8664f960635ed5be9e2e2d0",
+                    "shasum": "77af5d6f544ea2261a11f25fc40445bb768d8825"
+                },
+                "require": {
+                    "brain/monkey": "^2.6",
+                    "composer/installers": "~1.0",
+                    "php": ">=7.4",
+                    "phpcompatibility/phpcompatibility-wp": "^2.1",
+                    "phpunit/phpunit": "^9.5",
+                    "wp-coding-standards/wpcs": "^3.0.1"
+                },
+                "require-dev": {
+                    "phpcsstandards/phpcsutils": "^1.0"
+                },
+                "time": "2024-05-02T14:57:26+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Script\\": "src/"
+                    }
+                },
+                "scripts": {
+                    "phpcs": [
+                        "./vendor/bin/phpcs --config-set --config-set error_severity 1 -i;",
+                        "./vendor/bin/phpcs -ps --colors ./ &2>/dev/null;"
+                    ],
+                    "phpcbf": [
+                        "./vendor/bin/phpcbf -ps --colors ./ &2>/dev/null;"
+                    ],
+                    "test": [
+                        "./vendor/bin/phpunit"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ],
+                    "checklist": [
+                        "Bcgov\\Script\\Checklists::postProductionChecksForScripts"
+                    ]
+                },
+                "support": {
+                    "source": "https://github.com/bcgov/wordpress-utils/tree/2.1.3",
+                    "issues": "https://github.com/bcgov/wordpress-utils/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov/wordpress-utils",
+                "version": "2.2.0",
+                "version_normalized": "2.2.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/wordpress-utils.git",
+                    "reference": "3ea077f42650b1c8cf8984c8b84789dbb5251b01"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov/wordpress-utils/bcgov-wordpress-utils-3ea077f42650b1c8cf8984c8b84789dbb5251b01-zip-7cbf29.zip",
+                    "reference": "3ea077f42650b1c8cf8984c8b84789dbb5251b01",
+                    "shasum": "8de7a67b2de93c963380b95add3b128168fb06da"
+                },
+                "require": {
+                    "brain/monkey": "^2.6",
+                    "composer/installers": "~1.0",
+                    "php": ">=7.4",
+                    "phpcompatibility/phpcompatibility-wp": "^2.1",
+                    "phpunit/phpunit": "^9.5",
+                    "wp-coding-standards/wpcs": "^3.0.1"
+                },
+                "require-dev": {
+                    "phpcsstandards/phpcsutils": "^1.0"
+                },
+                "time": "2024-10-07T23:03:41+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Script\\": "src/"
+                    }
+                },
+                "scripts": {
+                    "phpcs": [
+                        "./vendor/bin/phpcs --config-set --config-set error_severity 1 -i;",
+                        "./vendor/bin/phpcs -ps --colors ./ &2>/dev/null;"
+                    ],
+                    "phpcbf": [
+                        "./vendor/bin/phpcbf -ps --colors ./ &2>/dev/null;"
+                    ],
+                    "test": [
+                        "./vendor/bin/phpunit"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ],
+                    "checklist": [
+                        "Bcgov\\Script\\Checklists::postProductionChecksForScripts"
+                    ]
+                },
+                "support": {
+                    "source": "https://github.com/bcgov/wordpress-utils/tree/2.2.0",
+                    "issues": "https://github.com/bcgov/wordpress-utils/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov/wordpress-utils",
+                "version": "2.3.0",
+                "version_normalized": "2.3.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/wordpress-utils.git",
+                    "reference": "b7cec817fd4432c389111f170cfb0e7f1bd09b73"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov/wordpress-utils/bcgov-wordpress-utils-b7cec817fd4432c389111f170cfb0e7f1bd09b73-zip-aac50d.zip",
+                    "reference": "b7cec817fd4432c389111f170cfb0e7f1bd09b73",
+                    "shasum": "f9ee3e5f5743e1d4f908c16ded27068a58f36f36"
+                },
+                "require": {
+                    "brain/monkey": "^2.6",
+                    "composer/installers": "~1.0",
+                    "php": ">=7.4",
+                    "phpcompatibility/phpcompatibility-wp": "^2.1",
+                    "phpunit/phpunit": "^9.5",
+                    "wp-coding-standards/wpcs": "^3.0.1"
+                },
+                "require-dev": {
+                    "phpcsstandards/phpcsutils": "^1.0"
+                },
+                "time": "2024-10-09T22:49:37+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Script\\": "src/"
+                    }
+                },
+                "scripts": {
+                    "phpcs": [
+                        "./vendor/bin/phpcs --config-set --config-set error_severity 1 -i;",
+                        "./vendor/bin/phpcs -ps --colors ./ &2>/dev/null;"
+                    ],
+                    "phpcbf": [
+                        "./vendor/bin/phpcbf -ps --colors ./ &2>/dev/null;"
+                    ],
+                    "test": [
+                        "./vendor/bin/phpunit"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ],
+                    "checklist": [
+                        "Bcgov\\Script\\Checklists::postProductionChecksForScripts"
+                    ]
+                },
+                "support": {
+                    "source": "https://github.com/bcgov/wordpress-utils/tree/2.3.0",
+                    "issues": "https://github.com/bcgov/wordpress-utils/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov/wordpress-utils",
+                "version": "2.3.1",
+                "version_normalized": "2.3.1.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/wordpress-utils.git",
+                    "reference": "4efc809f5663dab282a4748c22e9f310b0db8ac4"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov/wordpress-utils/bcgov-wordpress-utils-4efc809f5663dab282a4748c22e9f310b0db8ac4-zip-ca203d.zip",
+                    "reference": "4efc809f5663dab282a4748c22e9f310b0db8ac4",
+                    "shasum": "a1e74dc3f46fc9e3ca28d0f40b13677b67c1ded1"
+                },
+                "require": {
+                    "brain/monkey": "^2.6",
+                    "composer/installers": "~1.0",
+                    "php": ">=7.4",
+                    "phpcompatibility/phpcompatibility-wp": "^2.1",
+                    "phpunit/phpunit": "^9.5",
+                    "wp-coding-standards/wpcs": "^3.0.1"
+                },
+                "require-dev": {
+                    "phpcsstandards/phpcsutils": "^1.0"
+                },
+                "time": "2024-10-16T20:20:43+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Script\\": "src/"
+                    }
+                },
+                "scripts": {
+                    "phpcs": [
+                        "./vendor/bin/phpcs --config-set --config-set error_severity 1 -i;",
+                        "./vendor/bin/phpcs -ps --colors ./ &2>/dev/null;"
+                    ],
+                    "phpcbf": [
+                        "./vendor/bin/phpcbf -ps --colors ./ &2>/dev/null;"
+                    ],
+                    "test": [
+                        "./vendor/bin/phpunit"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ],
+                    "checklist": [
+                        "Bcgov\\Script\\Checklists::postProductionChecksForScripts"
+                    ]
+                },
+                "support": {
+                    "source": "https://github.com/bcgov/wordpress-utils/tree/2.3.1",
+                    "issues": "https://github.com/bcgov/wordpress-utils/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov/wordpress-utils",
+                "version": "2.4.0",
+                "version_normalized": "2.4.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/wordpress-utils.git",
+                    "reference": "8568e48a035774d929f2047da2f0b8dadf57ed59"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov/wordpress-utils/bcgov-wordpress-utils-8568e48a035774d929f2047da2f0b8dadf57ed59-zip-0319fc.zip",
+                    "reference": "8568e48a035774d929f2047da2f0b8dadf57ed59",
+                    "shasum": "94160694c49c77a192cf1d67a63f19c80dbdaa9b"
+                },
+                "require": {
+                    "brain/monkey": "^2.6",
+                    "composer/installers": "~1.0",
+                    "php": ">=7.4",
+                    "phpcompatibility/phpcompatibility-wp": "^2.1",
+                    "phpunit/phpunit": "^9.5",
+                    "wp-coding-standards/wpcs": "^3.0.1"
+                },
+                "require-dev": {
+                    "phpcsstandards/phpcsutils": "^1.0"
+                },
+                "time": "2024-12-02T19:22:08+00:00",
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Script\\": "src/"
+                    }
+                },
+                "scripts": {
+                    "phpcs": [
+                        "./vendor/bin/phpcs --config-set --config-set error_severity 1 -i;",
+                        "./vendor/bin/phpcs -ps --colors ./ &2>/dev/null;"
+                    ],
+                    "phpcbf": [
+                        "./vendor/bin/phpcbf -ps --colors ./ &2>/dev/null;"
+                    ],
+                    "test": [
+                        "./vendor/bin/phpunit"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ],
+                    "checklist": [
+                        "Bcgov\\Script\\Checklists::postProductionChecksForScripts"
+                    ]
+                },
+                "support": {
+                    "source": "https://github.com/bcgov/wordpress-utils/tree/2.4.0",
+                    "issues": "https://github.com/bcgov/wordpress-utils/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov/wordpress-utils",
+                "version": "2.5.0",
+                "version_normalized": "2.5.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/wordpress-utils.git",
+                    "reference": "08eee71456fd35af988e67a7135524f8d65b89b0"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov/wordpress-utils/bcgov-wordpress-utils-08eee71456fd35af988e67a7135524f8d65b89b0-zip-d5eab0.zip",
+                    "reference": "08eee71456fd35af988e67a7135524f8d65b89b0",
+                    "shasum": "29c07cddbb3be70efc398a433559ea315bde7e2d"
+                },
+                "require": {
+                    "brain/monkey": "^2.6",
+                    "composer/installers": "~1.0",
+                    "php": ">=7.4",
+                    "phpcompatibility/phpcompatibility-wp": "^2.1",
+                    "phpunit/phpunit": "^9.5",
+                    "wp-coding-standards/wpcs": "^3.0.1"
+                },
+                "require-dev": {
+                    "phpcsstandards/phpcsutils": "^1.0"
+                },
+                "time": "2025-01-30T00:11:41+00:00",
+                "bin": [
+                    "bin/scan-wp-patterns.php"
+                ],
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Script\\": "src/"
+                    }
+                },
+                "scripts": {
+                    "phpcs": [
+                        "./vendor/bin/phpcs --config-set --config-set error_severity 1 -i;",
+                        "./vendor/bin/phpcs -ps --colors ./ &2>/dev/null;"
+                    ],
+                    "phpcbf": [
+                        "./vendor/bin/phpcbf -ps --colors ./ &2>/dev/null;"
+                    ],
+                    "test": [
+                        "./vendor/bin/phpunit"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ],
+                    "checklist": [
+                        "Bcgov\\Script\\Checklists::postProductionChecksForScripts"
+                    ]
+                },
+                "support": {
+                    "source": "https://github.com/bcgov/wordpress-utils/tree/2.5.0",
+                    "issues": "https://github.com/bcgov/wordpress-utils/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov/wordpress-utils",
+                "version": "2.6.0",
+                "version_normalized": "2.6.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/wordpress-utils.git",
+                    "reference": "e87a3f5a6f1fedbb4c223742985f94fcb296d3bb"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov/wordpress-utils/bcgov-wordpress-utils-e87a3f5a6f1fedbb4c223742985f94fcb296d3bb-zip-417db4.zip",
+                    "reference": "e87a3f5a6f1fedbb4c223742985f94fcb296d3bb",
+                    "shasum": "e2897111ec9cd7b8b09635e341e0abadc580bc6e"
+                },
+                "require": {
+                    "brain/monkey": "^2.6",
+                    "composer/composer": "^2.8",
+                    "composer/installers": "~1.0",
+                    "php": ">=7.4",
+                    "phpcompatibility/phpcompatibility-wp": "^2.1",
+                    "phpunit/phpunit": "^9.5",
+                    "wp-coding-standards/wpcs": "^3.0.1"
+                },
+                "require-dev": {
+                    "phpcsstandards/phpcsutils": "^1.0"
+                },
+                "time": "2025-05-16T21:07:42+00:00",
+                "bin": [
+                    "bin/scan-wp-patterns.php"
+                ],
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Script\\": "src/"
+                    }
+                },
+                "scripts": {
+                    "phpcs": [
+                        "./vendor/bin/phpcs --config-set --config-set error_severity 1 -i;",
+                        "./vendor/bin/phpcs -ps --colors ./ &2>/dev/null;"
+                    ],
+                    "phpcbf": [
+                        "./vendor/bin/phpcbf -ps --colors ./ &2>/dev/null;"
+                    ],
+                    "test": [
+                        "./vendor/bin/phpunit"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ],
+                    "checklist": [
+                        "Bcgov\\Script\\Checklists::postProductionChecksForScripts"
+                    ]
+                },
+                "support": {
+                    "source": "https://github.com/bcgov/wordpress-utils/tree/2.6.0",
+                    "issues": "https://github.com/bcgov/wordpress-utils/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov/wordpress-utils",
+                "version": "2.7.0",
+                "version_normalized": "2.7.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/wordpress-utils.git",
+                    "reference": "2d8bef951a59a5c53a1ca8cfee15ad66f7ee227f"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov/wordpress-utils/bcgov-wordpress-utils-2d8bef951a59a5c53a1ca8cfee15ad66f7ee227f-zip-1374e6.zip",
+                    "reference": "2d8bef951a59a5c53a1ca8cfee15ad66f7ee227f",
+                    "shasum": "6c3ca06e417e04009d3b1447db09b6374e91dd80"
+                },
+                "require": {
+                    "brain/monkey": "^2.6",
+                    "composer/composer": "^2.8",
+                    "composer/installers": "~1.0",
+                    "php": ">=7.4",
+                    "phpcompatibility/phpcompatibility-wp": "^2.1",
+                    "phpunit/phpunit": "^9.5",
+                    "wp-coding-standards/wpcs": "^3.0.1"
+                },
+                "require-dev": {
+                    "phpcsstandards/phpcsutils": "^1.0"
+                },
+                "time": "2025-06-23T20:25:10+00:00",
+                "bin": [
+                    "bin/scan-wp-patterns.php"
+                ],
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Script\\": "src/"
+                    }
+                },
+                "scripts": {
+                    "phpcs": [
+                        "./vendor/bin/phpcs --config-set --config-set error_severity 1 -i;",
+                        "./vendor/bin/phpcs -ps --colors ./ &2>/dev/null;"
+                    ],
+                    "phpcbf": [
+                        "./vendor/bin/phpcbf -ps --colors ./ &2>/dev/null;"
+                    ],
+                    "test": [
+                        "./vendor/bin/phpunit"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ],
+                    "checklist": [
+                        "Bcgov\\Script\\Checklists::postProductionChecksForScripts"
+                    ]
+                },
+                "support": {
+                    "source": "https://github.com/bcgov/wordpress-utils/tree/2.7.0",
+                    "issues": "https://github.com/bcgov/wordpress-utils/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov/wordpress-utils",
+                "version": "2.8.0",
+                "version_normalized": "2.8.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/wordpress-utils.git",
+                    "reference": "d5f4731f944f39f8ffb4e6a625db979f8b97732a"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov/wordpress-utils/bcgov-wordpress-utils-d5f4731f944f39f8ffb4e6a625db979f8b97732a-zip-a04ce3.zip",
+                    "reference": "d5f4731f944f39f8ffb4e6a625db979f8b97732a",
+                    "shasum": "8bef67b6dfb44050e6a385b57ea48e2e62437e63"
+                },
+                "require": {
+                    "brain/monkey": "^2.6",
+                    "composer/composer": "^2.8",
+                    "composer/installers": "~1.0",
+                    "php": ">=7.4",
+                    "phpcompatibility/phpcompatibility-wp": "^2.1",
+                    "phpunit/phpunit": "^9.5",
+                    "wp-coding-standards/wpcs": "^3.2"
+                },
+                "require-dev": {
+                    "phpcsstandards/phpcsutils": "^1.0"
+                },
+                "time": "2025-08-19T19:28:40+00:00",
+                "bin": [
+                    "bin/scan-wp-patterns.php"
+                ],
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Script\\": "src/"
+                    }
+                },
+                "scripts": {
+                    "phpcs": [
+                        "./vendor/bin/phpcs --config-set --config-set error_severity 1 -i;",
+                        "./vendor/bin/phpcs -ps --colors ./ &2>/dev/null;"
+                    ],
+                    "phpcbf": [
+                        "./vendor/bin/phpcbf -ps --colors ./ &2>/dev/null;"
+                    ],
+                    "test": [
+                        "./vendor/bin/phpunit"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ],
+                    "checklist": [
+                        "Bcgov\\Script\\Checklists::postProductionChecksForScripts"
+                    ]
+                },
+                "support": {
+                    "source": "https://github.com/bcgov/wordpress-utils/tree/2.8.0",
+                    "issues": "https://github.com/bcgov/wordpress-utils/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov/wordpress-utils",
+                "version": "2.8.1",
+                "version_normalized": "2.8.1.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/wordpress-utils.git",
+                    "reference": "8092c32aa2e832e9d2d14be7ecb8ca02f338eb6b"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov/wordpress-utils/bcgov-wordpress-utils-8092c32aa2e832e9d2d14be7ecb8ca02f338eb6b-zip-b1d282.zip",
+                    "reference": "8092c32aa2e832e9d2d14be7ecb8ca02f338eb6b",
+                    "shasum": "c3d1470eba00fe6f97f3e2647574f8b33ec6727f"
+                },
+                "require": {
+                    "brain/monkey": "^2.6",
+                    "composer/composer": "^2.8",
+                    "composer/installers": "~1.0",
+                    "php": ">=7.4",
+                    "phpcompatibility/phpcompatibility-wp": "^2.1",
+                    "phpunit/phpunit": "^9.5",
+                    "wp-coding-standards/wpcs": "^3.2"
+                },
+                "require-dev": {
+                    "phpcsstandards/phpcsutils": "^1.0"
+                },
+                "time": "2025-11-20T16:44:28+00:00",
+                "bin": [
+                    "bin/scan-wp-patterns.php"
+                ],
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Script\\": "src/"
+                    }
+                },
+                "scripts": {
+                    "phpcs": [
+                        "./vendor/bin/phpcs;"
+                    ],
+                    "phpcbf": [
+                        "./vendor/bin/phpcbf;"
+                    ],
+                    "test": [
+                        "./vendor/bin/phpunit"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ],
+                    "checklist": [
+                        "Bcgov\\Script\\Checklists::postProductionChecksForScripts"
+                    ],
+                    "phpcs-allow-todo": [
+                        "./vendor/bin/phpcs --exclude=Generic.Commenting.Todo;"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "description": "A collection of utilities for WordPress plugin and theme development.",
+                "support": {
+                    "source": "https://github.com/bcgov/wordpress-utils/tree/2.8.1",
+                    "issues": "https://github.com/bcgov/wordpress-utils/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov/wordpress-utils",
+                "version": "3.0.0",
+                "version_normalized": "3.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/wordpress-utils.git",
+                    "reference": "ce65525cd7d4f1c1394c8b46129df0e36049bd35"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov/wordpress-utils/bcgov-wordpress-utils-ce65525cd7d4f1c1394c8b46129df0e36049bd35-zip-7f34d1.zip",
+                    "reference": "ce65525cd7d4f1c1394c8b46129df0e36049bd35",
+                    "shasum": "1fc502d17d6fd1b2257efc861023f52b8e8eaf04"
+                },
+                "require": {
+                    "brain/monkey": "^2.6",
+                    "composer/composer": "^2.8",
+                    "composer/installers": "~1.0",
+                    "php": ">=7.4",
+                    "phpcompatibility/phpcompatibility-wp": "^2.1",
+                    "phpunit/phpunit": "^9.5",
+                    "wp-coding-standards/wpcs": "^3.3"
+                },
+                "require-dev": {
+                    "phpcsstandards/phpcsutils": "^1.0"
+                },
+                "time": "2025-12-24T18:54:04+00:00",
+                "bin": [
+                    "bin/scan-wp-patterns.php"
+                ],
+                "type": "library",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Script\\": "src/"
+                    }
+                },
+                "scripts": {
+                    "phpcs": [
+                        "./vendor/bin/phpcs;"
+                    ],
+                    "phpcbf": [
+                        "./vendor/bin/phpcbf;"
+                    ],
+                    "test": [
+                        "./vendor/bin/phpunit"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ],
+                    "checklist": [
+                        "Bcgov\\Script\\Checklists::postProductionChecksForScripts"
+                    ],
+                    "phpcs-allow-todo": [
+                        "./vendor/bin/phpcs --exclude=Generic.Commenting.Todo;"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "description": "A collection of utilities for WordPress plugin and theme development.",
+                "support": {
+                    "source": "https://github.com/bcgov/wordpress-utils/tree/3.0.0",
+                    "issues": "https://github.com/bcgov/wordpress-utils/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            }
+        ]
+    }
+}

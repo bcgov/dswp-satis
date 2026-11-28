@@ -1,0 +1,787 @@
+{
+    "packages": {
+        "bcgov-theme/bcgov-wordpress-block-theme": [
+            {
+                "name": "bcgov-theme/bcgov-wordpress-block-theme",
+                "version": "1.1.0.x-dev",
+                "version_normalized": "1.1.0.9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/bcgov-wordpress-block-theme.git",
+                    "reference": "ec6261946fc2a9d7c45dacff5585f39989763933"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-theme/bcgov-wordpress-block-theme/bcgov-theme-bcgov-wordpress-block-theme-ec6261946fc2a9d7c45dacff5585f39989763933-zip-aa26b5.zip",
+                    "reference": "ec6261946fc2a9d7c45dacff5585f39989763933",
+                    "shasum": "af3f74137d9fe15a4ba4f66cd0aa50e151cfef03"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-scripts": "^2.1.3"
+                },
+                "time": "2024-09-17T21:06:28+00:00",
+                "type": "wordpress-theme",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\Block\\": [
+                            "src",
+                            "inc"
+                        ]
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\Block\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "production": [
+                        "composer validate",
+                        "Bcgov\\Script\\Checklists::postProductionChecks"
+                    ],
+                    "checklist": [
+                        "composer validate",
+                        "Bcgov\\Script\\Checklists::postProductionChecks"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "Bcgov\\Script\\Tests::phpunit"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "description": "Block Theme for BC Gov",
+                "support": {
+                    "source": "https://github.com/bcgov/bcgov-wordpress-block-theme/tree/1.1.0",
+                    "issues": "https://github.com/bcgov/bcgov-wordpress-block-theme/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov-theme/bcgov-wordpress-block-theme",
+                "version": "dev-bug/DESCW-3207_dependabot-fixes",
+                "version_normalized": "dev-bug/DESCW-3207_dependabot-fixes",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/bcgov-wordpress-block-theme.git",
+                    "reference": "82739cff713ec73b5d116868b426ffacbbf2e397"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-theme/bcgov-wordpress-block-theme/bcgov-theme-bcgov-wordpress-block-theme-82739cff713ec73b5d116868b426ffacbbf2e397-zip-ec6b99.zip",
+                    "reference": "82739cff713ec73b5d116868b426ffacbbf2e397",
+                    "shasum": "8efd799fc7314e6e713b81696ad9c320f8a51988"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-utils": "2.8.0"
+                },
+                "time": "2025-11-05T16:33:14+00:00",
+                "type": "wordpress-theme",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\Block\\": [
+                            "src",
+                            "inc"
+                        ]
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\Block\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "production": [
+                        "composer validate",
+                        "Bcgov\\Script\\Checklists::postProductionChecks"
+                    ],
+                    "checklist": [
+                        "composer validate",
+                        "Bcgov\\Script\\Checklists::postProductionChecks"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "Bcgov\\Script\\Tests::phpunit"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "description": "Block Theme for BC Gov",
+                "support": {
+                    "source": "https://github.com/bcgov/bcgov-wordpress-block-theme/tree/bug/DESCW-3207_dependabot-fixes",
+                    "issues": "https://github.com/bcgov/bcgov-wordpress-block-theme/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov-theme/bcgov-wordpress-block-theme",
+                "version": "dev-experimental/digimod-digital-government",
+                "version_normalized": "dev-experimental/digimod-digital-government",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/bcgov-wordpress-block-theme.git",
+                    "reference": "9d8118348ea04bea2c0eedf72b7872bd3d7e2038"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-theme/bcgov-wordpress-block-theme/bcgov-theme-bcgov-wordpress-block-theme-9d8118348ea04bea2c0eedf72b7872bd3d7e2038-zip-16b4f8.zip",
+                    "reference": "9d8118348ea04bea2c0eedf72b7872bd3d7e2038",
+                    "shasum": "216e5f5789db51c7e2ed26c60e09c003cf3accc1"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-scripts": "1.*"
+                },
+                "time": "2023-05-16T19:39:54+00:00",
+                "type": "wordpress-theme",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\Block\\": [
+                            "src",
+                            "inc"
+                        ]
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\Block\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "production": [
+                        "composer validate",
+                        "Bcgov\\Script\\Checklists::postProductionChecks"
+                    ],
+                    "checklist": [
+                        "composer validate",
+                        "Bcgov\\Script\\Checklists::postProductionChecks"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "Bcgov\\Script\\Tests::phpunit"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "description": "Block Theme for BC Gov",
+                "support": {
+                    "source": "https://github.com/bcgov/bcgov-wordpress-block-theme/tree/experimental/digimod-digital-government",
+                    "issues": "https://github.com/bcgov/bcgov-wordpress-block-theme/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov-theme/bcgov-wordpress-block-theme",
+                "version": "dev-feature/DESCW-3089_update-node-deps",
+                "version_normalized": "dev-feature/DESCW-3089_update-node-deps",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/bcgov-wordpress-block-theme.git",
+                    "reference": "79ed2e6bbdd16127ea241be30b445665719d0acf"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-theme/bcgov-wordpress-block-theme/bcgov-theme-bcgov-wordpress-block-theme-79ed2e6bbdd16127ea241be30b445665719d0acf-zip-8b6420.zip",
+                    "reference": "79ed2e6bbdd16127ea241be30b445665719d0acf",
+                    "shasum": "b2ebda9913546ff793b71b128390b16e524d7706"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-utils": "2.7.0"
+                },
+                "time": "2025-07-30T22:02:47+00:00",
+                "type": "wordpress-theme",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\Block\\": [
+                            "src",
+                            "inc"
+                        ]
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\Block\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "production": [
+                        "composer validate",
+                        "Bcgov\\Script\\Checklists::postProductionChecks"
+                    ],
+                    "checklist": [
+                        "composer validate",
+                        "Bcgov\\Script\\Checklists::postProductionChecks"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "Bcgov\\Script\\Tests::phpunit"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "description": "Block Theme for BC Gov",
+                "support": {
+                    "source": "https://github.com/bcgov/bcgov-wordpress-block-theme/tree/feature/DESCW-3089_update-node-deps",
+                    "issues": "https://github.com/bcgov/bcgov-wordpress-block-theme/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov-theme/bcgov-wordpress-block-theme",
+                "version": "dev-feature/cleanbc-cleanup",
+                "version_normalized": "dev-feature/cleanbc-cleanup",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/bcgov-wordpress-block-theme.git",
+                    "reference": "979335b2828d2c194939cbe9f2d485646cd63548"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-theme/bcgov-wordpress-block-theme/bcgov-theme-bcgov-wordpress-block-theme-979335b2828d2c194939cbe9f2d485646cd63548-zip-6c2df4.zip",
+                    "reference": "979335b2828d2c194939cbe9f2d485646cd63548",
+                    "shasum": "7de2e3ad6bdc344c3dcf27ab6f2ac0223e6f8067"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-scripts": "1.*"
+                },
+                "time": "2023-08-09T17:46:07+00:00",
+                "type": "wordpress-theme",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\Block\\": [
+                            "src",
+                            "inc"
+                        ]
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\Block\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "production": [
+                        "composer validate",
+                        "Bcgov\\Script\\Checklists::postProductionChecks"
+                    ],
+                    "checklist": [
+                        "composer validate",
+                        "Bcgov\\Script\\Checklists::postProductionChecks"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "Bcgov\\Script\\Tests::phpunit"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "description": "Block Theme for BC Gov",
+                "support": {
+                    "source": "https://github.com/bcgov/bcgov-wordpress-block-theme/tree/feature/cleanbc-cleanup",
+                    "issues": "https://github.com/bcgov/bcgov-wordpress-block-theme/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov-theme/bcgov-wordpress-block-theme",
+                "version": "dev-feature/dswp-1017-resolve-dependabot-security-alerts",
+                "version_normalized": "dev-feature/dswp-1017-resolve-dependabot-security-alerts",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/bcgov-wordpress-block-theme.git",
+                    "reference": "aad59b1d6769da172a3cdd76131738e6cfd83718"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-theme/bcgov-wordpress-block-theme/bcgov-theme-bcgov-wordpress-block-theme-aad59b1d6769da172a3cdd76131738e6cfd83718-zip-581ed9.zip",
+                    "reference": "aad59b1d6769da172a3cdd76131738e6cfd83718",
+                    "shasum": "473738002c87350b994235137e6ebda68fbe9710"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-utils": "2.8.0"
+                },
+                "time": "2026-07-27T18:07:05+00:00",
+                "type": "wordpress-theme",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\Block\\": [
+                            "src",
+                            "inc"
+                        ]
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\Block\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "production": [
+                        "composer validate",
+                        "Bcgov\\Script\\Checklists::postProductionChecks"
+                    ],
+                    "checklist": [
+                        "composer validate",
+                        "Bcgov\\Script\\Checklists::postProductionChecks"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "Bcgov\\Script\\Tests::phpunit"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "description": "Block Theme for BC Gov",
+                "support": {
+                    "source": "https://github.com/bcgov/bcgov-wordpress-block-theme/tree/feature/dswp-1017-resolve-dependabot-security-alerts",
+                    "issues": "https://github.com/bcgov/bcgov-wordpress-block-theme/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov-theme/bcgov-wordpress-block-theme",
+                "version": "dev-feature/dswp-1019-update-main-package-lock-json",
+                "version_normalized": "dev-feature/dswp-1019-update-main-package-lock-json",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/bcgov-wordpress-block-theme.git",
+                    "reference": "a6dd6098a096ef586cb1d20d182deafe5ad1f568"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-theme/bcgov-wordpress-block-theme/bcgov-theme-bcgov-wordpress-block-theme-a6dd6098a096ef586cb1d20d182deafe5ad1f568-zip-8c409a.zip",
+                    "reference": "a6dd6098a096ef586cb1d20d182deafe5ad1f568",
+                    "shasum": "d296affe0a5bc8aaf4bbf447b0afa742135ac39c"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-utils": "2.8.0"
+                },
+                "time": "2026-07-22T20:01:58+00:00",
+                "type": "wordpress-theme",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\Block\\": [
+                            "src",
+                            "inc"
+                        ]
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\Block\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "production": [
+                        "composer validate",
+                        "Bcgov\\Script\\Checklists::postProductionChecks"
+                    ],
+                    "checklist": [
+                        "composer validate",
+                        "Bcgov\\Script\\Checklists::postProductionChecks"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "Bcgov\\Script\\Tests::phpunit"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "description": "Block Theme for BC Gov",
+                "support": {
+                    "source": "https://github.com/bcgov/bcgov-wordpress-block-theme/tree/feature/dswp-1019-update-main-package-lock-json",
+                    "issues": "https://github.com/bcgov/bcgov-wordpress-block-theme/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov-theme/bcgov-wordpress-block-theme",
+                "version": "dev-feature/dswp-1020-update-documentation-package-lock-json",
+                "version_normalized": "dev-feature/dswp-1020-update-documentation-package-lock-json",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/bcgov-wordpress-block-theme.git",
+                    "reference": "92a0e608c7ffabbad9086c7a54f631bd34cc00f3"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-theme/bcgov-wordpress-block-theme/bcgov-theme-bcgov-wordpress-block-theme-92a0e608c7ffabbad9086c7a54f631bd34cc00f3-zip-80daf2.zip",
+                    "reference": "92a0e608c7ffabbad9086c7a54f631bd34cc00f3",
+                    "shasum": "ecbd82d91106bf12fd8a10a174fcd875a6f18393"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-utils": "2.8.0"
+                },
+                "time": "2026-07-23T15:30:30+00:00",
+                "type": "wordpress-theme",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\Block\\": [
+                            "src",
+                            "inc"
+                        ]
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\Block\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "production": [
+                        "composer validate",
+                        "Bcgov\\Script\\Checklists::postProductionChecks"
+                    ],
+                    "checklist": [
+                        "composer validate",
+                        "Bcgov\\Script\\Checklists::postProductionChecks"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "Bcgov\\Script\\Tests::phpunit"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "description": "Block Theme for BC Gov",
+                "support": {
+                    "source": "https://github.com/bcgov/bcgov-wordpress-block-theme/tree/feature/dswp-1020-update-documentation-package-lock-json",
+                    "issues": "https://github.com/bcgov/bcgov-wordpress-block-theme/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov-theme/bcgov-wordpress-block-theme",
+                "version": "dev-feature/dswp-1021-update-composer-lock",
+                "version_normalized": "dev-feature/dswp-1021-update-composer-lock",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/bcgov-wordpress-block-theme.git",
+                    "reference": "8a683e5e47a4f8cda71f4b97a2ce06e293880ec7"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-theme/bcgov-wordpress-block-theme/bcgov-theme-bcgov-wordpress-block-theme-8a683e5e47a4f8cda71f4b97a2ce06e293880ec7-zip-9a6f4a.zip",
+                    "reference": "8a683e5e47a4f8cda71f4b97a2ce06e293880ec7",
+                    "shasum": "fee9b95b0c4239d83a6ffcbbca5eb6b9cfcee641"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-utils": "2.8.0"
+                },
+                "time": "2026-07-23T17:33:57+00:00",
+                "type": "wordpress-theme",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\Block\\": [
+                            "src",
+                            "inc"
+                        ]
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\Block\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "production": [
+                        "composer validate",
+                        "Bcgov\\Script\\Checklists::postProductionChecks"
+                    ],
+                    "checklist": [
+                        "composer validate",
+                        "Bcgov\\Script\\Checklists::postProductionChecks"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "Bcgov\\Script\\Tests::phpunit"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "description": "Block Theme for BC Gov",
+                "support": {
+                    "source": "https://github.com/bcgov/bcgov-wordpress-block-theme/tree/feature/dswp-1021-update-composer-lock",
+                    "issues": "https://github.com/bcgov/bcgov-wordpress-block-theme/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov-theme/bcgov-wordpress-block-theme",
+                "version": "dev-feature/dswp-1022-verify-build-and-document-alerts",
+                "version_normalized": "dev-feature/dswp-1022-verify-build-and-document-alerts",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/bcgov-wordpress-block-theme.git",
+                    "reference": "b59daa2a0e998f73595fb70c22d241adaaac6799"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-theme/bcgov-wordpress-block-theme/bcgov-theme-bcgov-wordpress-block-theme-b59daa2a0e998f73595fb70c22d241adaaac6799-zip-7ea9dd.zip",
+                    "reference": "b59daa2a0e998f73595fb70c22d241adaaac6799",
+                    "shasum": "ff209603cd9d34699eb6fa74bcf7ecef29e61d56"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-utils": "2.8.0"
+                },
+                "time": "2026-07-27T15:44:21+00:00",
+                "type": "wordpress-theme",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\Block\\": [
+                            "src",
+                            "inc"
+                        ]
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\Block\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "production": [
+                        "composer validate",
+                        "Bcgov\\Script\\Checklists::postProductionChecks"
+                    ],
+                    "checklist": [
+                        "composer validate",
+                        "Bcgov\\Script\\Checklists::postProductionChecks"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "Bcgov\\Script\\Tests::phpunit"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "description": "Block Theme for BC Gov",
+                "support": {
+                    "source": "https://github.com/bcgov/bcgov-wordpress-block-theme/tree/feature/dswp-1022-verify-build-and-document-alerts",
+                    "issues": "https://github.com/bcgov/bcgov-wordpress-block-theme/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov-theme/bcgov-wordpress-block-theme",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/bcgov-wordpress-block-theme.git",
+                    "reference": "a932a661f506b21e57485a6e7cc89ce2a4730780"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-theme/bcgov-wordpress-block-theme/bcgov-theme-bcgov-wordpress-block-theme-a932a661f506b21e57485a6e7cc89ce2a4730780-zip-8857ca.zip",
+                    "reference": "a932a661f506b21e57485a6e7cc89ce2a4730780",
+                    "shasum": "24fa97d6df27876a31e6ea0c0485a50bb922bca9"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-utils": "2.8.0"
+                },
+                "time": "2026-10-28T22:35:20+00:00",
+                "default-branch": true,
+                "type": "wordpress-theme",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\Block\\": [
+                            "src",
+                            "inc"
+                        ]
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\Block\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "production": [
+                        "composer validate",
+                        "Bcgov\\Script\\Checklists::postProductionChecks"
+                    ],
+                    "checklist": [
+                        "composer validate",
+                        "Bcgov\\Script\\Checklists::postProductionChecks"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "Bcgov\\Script\\Tests::phpunit"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "description": "Block Theme for BC Gov",
+                "support": {
+                    "source": "https://github.com/bcgov/bcgov-wordpress-block-theme/tree/v1.20.0",
+                    "issues": "https://github.com/bcgov/bcgov-wordpress-block-theme/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov-theme/bcgov-wordpress-block-theme",
+                "version": "dev-refactor/dswp-1300-standardize-block-theme-hook-registration",
+                "version_normalized": "dev-refactor/dswp-1300-standardize-block-theme-hook-registration",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/bcgov-wordpress-block-theme.git",
+                    "reference": "c6622e928a1a6275ae908be778dc1e49432094b7"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-theme/bcgov-wordpress-block-theme/bcgov-theme-bcgov-wordpress-block-theme-c6622e928a1a6275ae908be778dc1e49432094b7-zip-01f697.zip",
+                    "reference": "c6622e928a1a6275ae908be778dc1e49432094b7",
+                    "shasum": "b241568e2b9f52a37b680a6cd35d442949c90767"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-utils": "2.8.0"
+                },
+                "time": "2026-10-28T19:48:19+00:00",
+                "type": "wordpress-theme",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\Block\\": [
+                            "src",
+                            "inc"
+                        ]
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\Theme\\Block\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "production": [
+                        "composer validate",
+                        "Bcgov\\Script\\Checklists::postProductionChecks"
+                    ],
+                    "checklist": [
+                        "composer validate",
+                        "Bcgov\\Script\\Checklists::postProductionChecks"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "Bcgov\\Script\\Tests::phpunit"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "description": "Block Theme for BC Gov",
+                "support": {
+                    "source": "https://github.com/bcgov/bcgov-wordpress-block-theme/tree/refactor/dswp-1300-standardize-block-theme-hook-registration",
+                    "issues": "https://github.com/bcgov/bcgov-wordpress-block-theme/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            }
+        ]
+    }
+}

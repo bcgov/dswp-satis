@@ -1,0 +1,505 @@
+{
+    "packages": {
+        "bcgov-plugin/bcgov-emergency-info": [
+            {
+                "name": "bcgov-plugin/bcgov-emergency-info",
+                "version": "dev-demo/block-bindings",
+                "version_normalized": "dev-demo/block-bindings",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/bcgov-emergency-info.git",
+                    "reference": "1fb045e47581490289c83c40b7ef8608be0808ce"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-plugin/bcgov-emergency-info/bcgov-plugin-bcgov-emergency-info-1fb045e47581490289c83c40b7ef8608be0808ce-zip-9094e9.zip",
+                    "reference": "1fb045e47581490289c83c40b7ef8608be0808ce",
+                    "shasum": "767521cc6284113e2ff129e752475b00e215dc58"
+                },
+                "require": {
+                    "composer/installers": "^1.0"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-common": "@dev",
+                    "bcgov/wordpress-utils": "@dev"
+                },
+                "time": "2025-02-14T23:41:28+00:00",
+                "type": "wordpress-plugin",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\EmergencyInfo\\": "src/Bcgov/EmergencyInfo/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\EmergencyInfo\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "setup": [
+                        "npm ci",
+                        "@build"
+                    ],
+                    "build": [
+                        "npm run build"
+                    ],
+                    "production": [
+                        "npm run format",
+                        "npm run build",
+                        "@checklist"
+                    ],
+                    "checklist": [
+                        "Bcgov\\Script\\Checklists::postProductionChecks"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "Bcgov\\Script\\Tests::phpunit"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "description": "Plugin for Emergency Info BC.",
+                "support": {
+                    "source": "https://github.com/bcgov/bcgov-emergency-info/tree/demo/block-bindings",
+                    "issues": "https://github.com/bcgov/bcgov-emergency-info/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov-plugin/bcgov-emergency-info",
+                "version": "dev-feature/DESCW-2425",
+                "version_normalized": "dev-feature/DESCW-2425",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/bcgov-emergency-info.git",
+                    "reference": "0792244cf30a9d4c673c8dbdc8e305f3b8708c3c"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-plugin/bcgov-emergency-info/bcgov-plugin-bcgov-emergency-info-0792244cf30a9d4c673c8dbdc8e305f3b8708c3c-zip-67c77b.zip",
+                    "reference": "0792244cf30a9d4c673c8dbdc8e305f3b8708c3c",
+                    "shasum": "e7fa64e5027c99cdf486271720b9b37454988202"
+                },
+                "require": {
+                    "composer/installers": "^1.0"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-common": "@dev",
+                    "bcgov/wordpress-scripts": "2.*"
+                },
+                "time": "2024-06-17T22:28:36+00:00",
+                "type": "wordpress-plugin",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\EmergencyInfo\\": "src/Bcgov/EmergencyInfo/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\EmergencyInfo\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "setup": [
+                        "npm ci",
+                        "@build"
+                    ],
+                    "build": [
+                        "npm run build"
+                    ],
+                    "production": [
+                        "npm run format",
+                        "npm run build",
+                        "@checklist"
+                    ],
+                    "checklist": [
+                        "Bcgov\\Script\\Checklists::postProductionChecks"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "Bcgov\\Script\\Tests::phpunit"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "description": "Plugin for Emergency Info BC.",
+                "support": {
+                    "source": "https://github.com/bcgov/bcgov-emergency-info/tree/feature/DESCW-2425",
+                    "issues": "https://github.com/bcgov/bcgov-emergency-info/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov-plugin/bcgov-emergency-info",
+                "version": "dev-feature/DESCW-3100_update-autoloader",
+                "version_normalized": "dev-feature/DESCW-3100_update-autoloader",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/bcgov-emergency-info.git",
+                    "reference": "ebe763e58c44fbab9fa2710dc6657f7e6dfd3785"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-plugin/bcgov-emergency-info/bcgov-plugin-bcgov-emergency-info-ebe763e58c44fbab9fa2710dc6657f7e6dfd3785-zip-8c3c0e.zip",
+                    "reference": "ebe763e58c44fbab9fa2710dc6657f7e6dfd3785",
+                    "shasum": "f2284c5a3690e52b710e1318d49bd1b561813dcc"
+                },
+                "require": {
+                    "composer/installers": "^1.0"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-common": "@dev",
+                    "bcgov/wordpress-utils": "@dev"
+                },
+                "time": "2025-08-11T19:26:59+00:00",
+                "type": "wordpress-plugin",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\EmergencyInfo\\": "src/Bcgov/EmergencyInfo/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\EmergencyInfo\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "setup": [
+                        "npm ci",
+                        "@build"
+                    ],
+                    "build": [
+                        "npm run build"
+                    ],
+                    "production": [
+                        "npm run format",
+                        "npm run build",
+                        "@checklist"
+                    ],
+                    "checklist": [
+                        "Bcgov\\Script\\Checklists::postProductionChecks"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "Bcgov\\Script\\Tests::phpunit"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "description": "Plugin for Emergency Info BC.",
+                "support": {
+                    "source": "https://github.com/bcgov/bcgov-emergency-info/tree/feature/DESCW-3100_update-autoloader",
+                    "issues": "https://github.com/bcgov/bcgov-emergency-info/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov-plugin/bcgov-emergency-info",
+                "version": "dev-feature/DSWP-467-remove-wordpress-common",
+                "version_normalized": "dev-feature/DSWP-467-remove-wordpress-common",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/bcgov-emergency-info.git",
+                    "reference": "d8f1cbabda14ca72587539e1e2bfa088b129d83e"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-plugin/bcgov-emergency-info/bcgov-plugin-bcgov-emergency-info-d8f1cbabda14ca72587539e1e2bfa088b129d83e-zip-eafb4c.zip",
+                    "reference": "d8f1cbabda14ca72587539e1e2bfa088b129d83e",
+                    "shasum": "7c43e8f655bbf2d86eea65d1dd751a5200c66b30"
+                },
+                "require": {
+                    "composer/installers": "^1.0"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-utils": "3.0.0",
+                    "yoast/phpunit-polyfills": "^4.0"
+                },
+                "time": "2026-01-22T17:09:54+00:00",
+                "type": "wordpress-plugin",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\EmergencyInfo\\": "src/Bcgov/EmergencyInfo/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\EmergencyInfo\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "setup": [
+                        "npm ci",
+                        "@build"
+                    ],
+                    "build": [
+                        "npm run build"
+                    ],
+                    "production": [
+                        "npm run format",
+                        "npm run build",
+                        "@checklist"
+                    ],
+                    "checklist": [
+                        "Bcgov\\Script\\Checklists::postProductionChecks"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "Bcgov\\Script\\Tests::phpunit"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "description": "Plugin for Emergency Info BC.",
+                "support": {
+                    "source": "https://github.com/bcgov/bcgov-emergency-info/tree/feature/DSWP-467-remove-wordpress-common",
+                    "issues": "https://github.com/bcgov/bcgov-emergency-info/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov-plugin/bcgov-emergency-info",
+                "version": "dev-feature/earthquake-early-warning-system",
+                "version_normalized": "dev-feature/earthquake-early-warning-system",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/bcgov-emergency-info.git",
+                    "reference": "940b6065e6392a76aea99176c31bba650910256d"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-plugin/bcgov-emergency-info/bcgov-plugin-bcgov-emergency-info-940b6065e6392a76aea99176c31bba650910256d-zip-4ddbc0.zip",
+                    "reference": "940b6065e6392a76aea99176c31bba650910256d",
+                    "shasum": "d0bfaa7696c15ecf44987424102abe79cdc5894b"
+                },
+                "require": {
+                    "composer/installers": "^1.0"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-common": "@dev",
+                    "bcgov/wordpress-scripts": "2.*",
+                    "phpunit/phpunit": "^9.6",
+                    "yoast/phpunit-polyfills": "^2.0"
+                },
+                "time": "2024-01-19T00:20:12+00:00",
+                "type": "wordpress-plugin",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\EmergencyInfo\\": "src/Bcgov/EmergencyInfo/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\EmergencyInfo\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "setup": [
+                        "npm ci",
+                        "@build"
+                    ],
+                    "build": [
+                        "npm run build"
+                    ],
+                    "production": [
+                        "npm run format",
+                        "npm run build",
+                        "@checklist"
+                    ],
+                    "checklist": [
+                        "Bcgov\\Script\\Checklists::postProductionChecks"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "setup-tests": [
+                        "bin/install-wp-tests.sh wordpress_test root '' localhost latest"
+                    ],
+                    "test": [
+                        "Bcgov\\Script\\Tests::phpunit"
+                    ],
+                    "test-wp": [
+                        "vendor/bin/phpunit --configuration phpunit.xml.dist"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "description": "Plugin for Emergency Info BC.",
+                "support": {
+                    "source": "https://github.com/bcgov/bcgov-emergency-info/tree/feature/earthquake-early-warning-system",
+                    "issues": "https://github.com/bcgov/bcgov-emergency-info/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov-plugin/bcgov-emergency-info",
+                "version": "dev-feature/user-testing",
+                "version_normalized": "dev-feature/user-testing",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/bcgov-emergency-info.git",
+                    "reference": "395899e3cdaddc3f68c45832655b333c2b4c9569"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-plugin/bcgov-emergency-info/bcgov-plugin-bcgov-emergency-info-395899e3cdaddc3f68c45832655b333c2b4c9569-zip-6152ae.zip",
+                    "reference": "395899e3cdaddc3f68c45832655b333c2b4c9569",
+                    "shasum": "355ccf5ce6e810d43b79d04358aa7c9d4688254d"
+                },
+                "require": {
+                    "composer/installers": "^1.0"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-common": "@dev",
+                    "bcgov/wordpress-utils": "@dev"
+                },
+                "time": "2025-02-11T19:27:48+00:00",
+                "type": "wordpress-plugin",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\EmergencyInfo\\": "src/Bcgov/EmergencyInfo/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\EmergencyInfo\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "setup": [
+                        "npm ci",
+                        "@build"
+                    ],
+                    "build": [
+                        "npm run build"
+                    ],
+                    "production": [
+                        "npm run format",
+                        "npm run build",
+                        "@checklist"
+                    ],
+                    "checklist": [
+                        "Bcgov\\Script\\Checklists::postProductionChecks"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "Bcgov\\Script\\Tests::phpunit"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "description": "Plugin for Emergency Info BC.",
+                "support": {
+                    "source": "https://github.com/bcgov/bcgov-emergency-info/tree/user-testing",
+                    "issues": "https://github.com/bcgov/bcgov-emergency-info/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            },
+            {
+                "name": "bcgov-plugin/bcgov-emergency-info",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/bcgov/bcgov-emergency-info.git",
+                    "reference": "bee42002659ef1e2a7750000db1b108e7ac032c2"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://bcgov.github.io/dswp-satis//dist/bcgov-plugin/bcgov-emergency-info/bcgov-plugin-bcgov-emergency-info-bee42002659ef1e2a7750000db1b108e7ac032c2-zip-a64a9a.zip",
+                    "reference": "bee42002659ef1e2a7750000db1b108e7ac032c2",
+                    "shasum": "532d0bbb410d781136540b3110e118a4eaa3027a"
+                },
+                "require": {
+                    "composer/installers": "^1.0"
+                },
+                "require-dev": {
+                    "bcgov/wordpress-utils": "3.0.0",
+                    "yoast/phpunit-polyfills": "^4.0"
+                },
+                "time": "2026-01-22T21:27:54+00:00",
+                "default-branch": true,
+                "type": "wordpress-plugin",
+                "autoload": {
+                    "psr-4": {
+                        "Bcgov\\EmergencyInfo\\": "src/Bcgov/EmergencyInfo/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Bcgov\\EmergencyInfo\\Tests\\": "Tests/"
+                    }
+                },
+                "scripts": {
+                    "setup": [
+                        "npm ci",
+                        "@build"
+                    ],
+                    "build": [
+                        "npm run build"
+                    ],
+                    "production": [
+                        "npm run format",
+                        "npm run build",
+                        "@checklist"
+                    ],
+                    "checklist": [
+                        "Bcgov\\Script\\Checklists::postProductionChecks"
+                    ],
+                    "phpcs": [
+                        "Bcgov\\Script\\Standards::phpcs"
+                    ],
+                    "phpcbf": [
+                        "Bcgov\\Script\\Standards::phpcbf"
+                    ],
+                    "test": [
+                        "Bcgov\\Script\\Tests::phpunit"
+                    ],
+                    "coverage": [
+                        "./vendor/bin/phpunit --coverage-html ./coverage/php/"
+                    ]
+                },
+                "description": "Plugin for Emergency Info BC.",
+                "support": {
+                    "source": "https://github.com/bcgov/bcgov-emergency-info/tree/main",
+                    "issues": "https://github.com/bcgov/bcgov-emergency-info/issues"
+                },
+                "published-time": "2026-11-19T05:22:26+00:00"
+            }
+        ]
+    }
+}

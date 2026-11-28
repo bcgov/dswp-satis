@@ -1,0 +1,15 @@
+{
+    "packages": [],
+    "includes": {
+        "include/all$d1d6b0f5bb7564db8ef152ad5f93f36ebcc9a2f5.json": {
+            "sha1": "d1d6b0f5bb7564db8ef152ad5f93f36ebcc9a2f5"
+        }
+    },
+    "metadata-url": "/dswp-satis/p2/%package%.json",
+    "available-packages": [
+        "bcgov-plugin/bcgov-emergency-info",
+        "bcgov-theme/bcgov-wordpress-block-theme",
+        "bcgov-theme/design-system-wordpress-child-theme-emergency-info",
+        "bcgov/wordpress-utils"
+    ]
+}
